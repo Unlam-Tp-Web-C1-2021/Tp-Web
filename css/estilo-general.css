@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: darkslateblue;
+    padding: 16px 32px;
+}
+
+main {
+    text-align: center;
+}
+
+h1 {
+    color: lightseagreen;
+}
+
+nav .menu ul {
+    flex-direction: row;
+    justify-content: space-around;
+    color: magenta;
+    background-color: lightseagreen;
+}
+
+nav .menu li {
+    display: inline-block;
+    list-style: none;
+    padding: 15px 10px;
+    text-align: center;
+}
+
+nav .menu a:hover {
+    color: #a07b9d;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: darkolivegreen;
+}
+
+footer section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+footer article {
+    font-weight: bold;
+    width: 30%;
+    text-align: center;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+footer p {
+    margin: 5px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #a07b9d;
+    border-radius: 10px;
+}
+
+footer li {
+    list-style: none;
+    margin: 5px;
+}
+
+footer img {
+    max-width: 50px;
+}
+
+footer h3 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-search {
+    display: flex;
+    justify-content: center;
+    border: black solid 2px;
+    border-radius: 16px;
+    padding: 8px;
+    width: 30%;
+}
+
+.container-search input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+}
+
+.container-search input:focus {
+    outline: none;
+}
+
+.nav-main {
+    background-color: dodgerblue;
+}
+
+.nav-main ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-main li {
+    list-style: none;
+}
+
+.nav-main a {
+    display: block;
+    list-style: none;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    padding: 16px;
+}
+
+.nav-main a:hover {
+    text-decoration: underline;
+    color: dodgerblue;
+    background-color: white;
+}
