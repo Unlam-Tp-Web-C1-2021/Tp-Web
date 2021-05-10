@@ -6,24 +6,182 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personalización de Gift Card</title>
     <link rel="stylesheet" href="css/estilo-general.css">
+    <link rel="stylesheet" href="css/estilo-gif-card.css">
 
 </head>
 
 <body>
     <header>
         <h1>Personaliza tu Gif Card</h1>
-    </header>
-    <nav class="menu">
-        <ul>
-            <li><a href="inicio.html">Home</a></li>
-            <li> <a href="contacto.html">Contacto</a></li>
-            <li> <a href="gif-card.html">Gif Card</a></li>
-            <li> <a href="calendario.html">Calendario</a></li>
-        </ul>
-    </nav>
-    <main>
 
+        <nav class="menu">
+            <ul>
+                <li><a href="inicio.html">Home</a></li>
+                <li> <a href="contacto.html">Contacto</a></li>
+                <li> <a href="gif-card.html">Gif Card</a></li>
+                <li> <a href="calendario.html">Calendario</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article>
+                <div class="vista-previa">
+                    <h2>Destinatario</h2>
+                </div>
+                <div class="fecha">
+                    <span id="fechaVistaPrevia">27 de Junio, 18hs</span>
+                </div>
+                </div>
+                <div class="texto-centrado">
+                    <h4>VISTA PREVIA DE RESULTADO DE PERSONALIZACION</h4>
+                </div>
+            </article>
+        </section>
+
+        <section>
+            <article>
+                <form>
+                    <h3>Personalización de Gifgt Card</h3>
+
+                    <div>
+                        <input class="input-personalizar" id="tituloEvento" type="text" name="tituloEvento" placeholder="Titulo Evento">
+                    </div>
+            </article>
+            <article>
+                <label>Color</label>
+                <div class="contenedor-de-personalizacion">
+                    <div>
+                        <div class="circulo-color red"></div>
+                        <input type="radio" name="color" value="red">
+                    </div>
+                    <div>
+                        <div class="circulo-color green"></div>
+                        <input type="radio" name="color" value="green">
+                    </div>
+                    <div>
+                        <div class="circulo-color blue"></div>
+                        <input type="radio" name="color" value="blue">
+                    </div>
+                    <div>
+                        <div class="circulo-color orange"></div>
+                        <input type="radio" name="color" value="orange">
+                    </div>
+                    <div>
+                        <div class="circulo-color pink"></div>
+                        <input type="radio" name="color" value="pink">
+                    </div>
+                </div>
+            </article>
+            <article>
+                <label>Tamaño de fuente</label>
+                <div class="contenedor-de-personalizacion">
+                    <div class="tamanio-fuente">
+                        <span class="fuente">20px</span>
+                        <input type="radio" name="tamanioFuente" value="20px">
+                    </div>
+                    <div class="tamanio-fuente">
+                        <span class="fuente">28px</span>
+                        <input type="radio" name="tamanioFuente" value="28px">
+                    </div>
+                    <div class="tamanio-fuente">
+                        <span class="fuente">32px</span>
+                        <input type="radio" name="tamanioFuente" value="32px">
+                    </div>
+                    <div class="tamanio-fuente">
+                        <span class="fuente">48px</span>
+                        <input type="radio" name="tamanioFuente" value="48px">
+                    </div>
+                    <div class="tamanio-fuente">
+                        <span class="fuente">60px</span>
+                        <input type="radio" name="tamanioFuente" value="60px">
+                    </div>
+                </div>
+
+                <div>
+                    <input id="fechaHoraEvento" class="input-personalizar" type="text" name="fechaHora" placeholder="Fecha y hora">
+                </div>
+            </article>
+            <article>
+                <label>Ubicacion</label>
+                <div class="contenedor-de-personalizacion">
+                    <div>
+                        <div class="ubicacion">
+                            <div class="abajo derecha"></div>
+                        </div>
+                        <input type="radio" name="ubicacion" value="abajo">
+                    </div>
+                    <div>
+                        <div class="ubicacion">
+                            <div class="izquierda"></div>
+                        </div>
+                        <input type="radio" name="ubicacion" value="arribaIzquierda">
+                    </div>
+                    <div>
+                        <div class="ubicacion">
+                            <div class="derecha"></div>
+                        </div>
+                        <input type="radio" name="ubicacion" value="arribaDerecha">
+                    </div>
+                </div>
+            </article>
+            <article>
+                <label>Fondo</label>
+                <div class="contenedor-de-personalizacion">
+                    <div>
+                        <div class="fondo-color 1"></div>
+                        <input type="radio" name="fondo" value="red">
+                    </div>
+                    <div>
+                        <div class="fondo-color 2"></div>
+                        <input type="radio" name="fondo" value="green">
+                    </div>
+                    <div>
+                        <div class="fondo-color 3"></div>
+                        <input type="radio" name="fondo" value="blue">
+                    </div>
+                    <div>
+                        <div class="fondo-color 4"></div>
+                        <input type="radio" name="fondo" value="orange">
+                    </div>
+                    <div>
+                        <div class="fondo-color 5"></div>
+                        <input type="radio" name="fondo" value="pink">
+                    </div>
+                </div>
+                <button type="submit" class="boton">Confirmar</button>
+                </form>
+            </article>
+        </section>
     </main>
+    <footer>
+        <section>
+            <article>
+                <p>Joaquin Romero</p>
+                <p>Daira Garraza</p>
+                <p>Sebastian Rueda</p>
+                <p>Matias Romé</p>
+            </article>
+
+            <nav>
+                <ul>
+                    <li><a href="inicio.html">Inicio</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="detalles-curso.html">Detalles del Curso</a></li>
+                    <li><a href="inscripcion.html">Inscripción a Curso</a></li>
+                    <li><a href="gif-card.html">Personaliza tu Gift Card</a></li>
+                    <li> <a href="calendario.html">Calendario</a></li>
+                </ul>
+            </nav>
+
+            <article>
+                <a href="http://instagram.com/" target="_blanck"> <img src="img/004-instagram.png"></a>
+                <a href="http://www.facebook.com/" target="_blanck"><img src="img/001-logo-de-facebook.png"></a>
+                <a href="http://twitter.com/" target="_blanck"><img src="img/003-boton-de-logo-del-twitter.png"></a>
+                <a href="http://youtube.com/" target="_blanck"><img src=" img/002-youtube.png"></a>
+            </article>
+        </section>
+    </footer>
 </body>
 
 </html>

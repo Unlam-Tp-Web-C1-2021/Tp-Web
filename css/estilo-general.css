@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-
 * {
     margin: 0%;
     padding: 0%;
@@ -23,21 +22,21 @@ h1 {
     color: lightseagreen;
 }
 
-nav .menu ul {
+.menu ul {
     flex-direction: row;
     justify-content: space-around;
     color: magenta;
     background-color: lightseagreen;
 }
 
-nav .menu li {
+.menu li {
     display: inline-block;
     list-style: none;
     padding: 15px 10px;
     text-align: center;
 }
 
-nav .menu a:hover {
+.menu a:hover {
     color: #a07b9d;
     border-radius: 10px;
 }
