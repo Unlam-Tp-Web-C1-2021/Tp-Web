@@ -41,6 +41,11 @@ h1 {
     border-radius: 10px;
 }
 
+#logo-main {
+    display: inline;
+    width: 64px;
+}
+
 footer {
     background-color: darkolivegreen;
 }

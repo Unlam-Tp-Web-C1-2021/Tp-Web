@@ -6,48 +6,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <link rel="stylesheet" href="css/estilo-general.css">
+    <link rel="stylesheet" href="css/estilo-contacto.css">
 
 </head>
 
 <body>
+
     <header>
-        <h1>Contacto</h1>
+        <div class="container-header">
+            <div id="container-logo">
+                <img src="img/logo.png" alt="logo" id="logo-main">
+            </div>
+            <div class="container-search">
+                <datalist id="cursos">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </datalist>
+
+                <input type="text" name="buscador" list="cursos" placeholder="Buscar...">
+
+                <img src="img/search.svg" alt="buscador">
+            </div>
+            <div>
+                <img src="img/shopping.svg" alt="carrito">
+            </div>
+        </div>
     </header>
-    <nav class="menu">
-        <ul>
-            <li><a href="inicio.html">Home</a></li>
-            <li> <a href="contacto.html">Contacto</a></li>
-            <li> <a href="gif-card.html">Gif Card</a></li>
-            <li> <a href="calendario.html">Calendario</a></li>
-        </ul>
-    </nav>
+
     <main>
-        <article>
-            <form action="#" method="GET">
-                <label for="nombre">Nombre y Apellido:</label>
-                <input type="text" id="nombre" name="nombre" required placeholder="Ingrese su nombre y apellido"> <br><br>
+        <nav class="nav-main">
+            <ul>
+                <li><a href="inicio.html">Home</a></li>
+                <li> <a href="contacto.html">Contacto</a></li>
+                <li> <a href="gif-card.html">Gif Card</a></li>
+                <li> <a href="calendario.html">Calendario</a></li>
+            </ul>
+        </nav>
 
-                <label for="correo">Email:</label>
-                <input type="email" id="correo" name="correo"> <br><br>
+        <section>
+            <article>
+                <form action="#" method="GET">
+                    <label for="nombre">Nombre y Apellido:</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Ingrese su nombre y apellido"> <br><br>
 
-                <label for="consulta">Consulta:</label> <br>
-                <textarea name="consulta" id="consulta" cols="30" rows="10" maxlength="10"></textarea> <br><br>
+                    <label for="correo">Email:</label>
+                    <input type="email" id="correo" name="correo"> <br><br>
 
-                <label for="provincia">Provincia</label>
-                <select name="provincia" id="provincia">
+                    <label for="consulta">Consulta:</label> <br>
+                    <textarea name="consulta" id="consulta" cols="30" rows="10" maxlength="10"></textarea> <br><br>
+
+                    <label for="provincia">Provincia</label>
+                    <select name="provincia" id="provincia">
                     <option value="1">Buenos Aires</option>
                     <option value="2">CABA</option>
                 </select>
 
 
-                <input type="submit" value="enviar">
-            </form>
-        </article>
+                    <input type="submit" value="enviar">
+                </form>
+            </article>
+            <aside>
+                <h2>Datos de Contacto</h2>
+                <p>Instagram: <a href="http://instagram.com" target="_blanck">@Instagram</a></p>
+                <p>Facebook: <a href="http://www.facebook.com" target="_blanck">Facebook</a></p>
+                <p>Mail: <a href="#">info@cursos-online.com</a></p>
+                <p>Telefono: <span>11 2222-3333</span></p>
+            </aside>
+        </section>
+        <section>
+            <article class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13125.981945658838!2d-58.573808612780766!3d-34.66744216389612!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8867107f425fade5!2sUniversidad+Nacional+de+La+Matanza!5e0!3m2!1ses!2sar!4v1558465262229!5m2!1ses!2sar"></iframe>
+        </section>
     </main>
     <footer>
-        <p>datos del grupo</p>
-        <p>menu inferior</p>
-        <p>redes sociales</p>
+        <section>
+            <article>
+                <p>Joaquin Romero</p>
+                <p>Daira Garraza</p>
+                <p>Sebastian Rueda</p>
+                <p>Matias Romé</p>
+            </article>
+
+            <nav>
+                <ul>
+                    <li><a href="inicio.html">Inicio</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="detalles-curso.html">Detalles del Curso</a></li>
+                    <li><a href="inscripcion.html">Inscripción a Curso</a></li>
+                    <li><a href="gif-card.html">Personaliza tu Gift Card</a></li>
+                    <li> <a href="calendario.html">Calendario</a></li>
+                </ul>
+            </nav>
+
+            <article>
+                <a href="http://instagram.com/" target="_blanck"> <img src="img/004-instagram.png"></a>
+                <a href="http://www.facebook.com/" target="_blanck"><img src="img/001-logo-de-facebook.png"></a>
+                <a href="http://twitter.com/" target="_blanck"><img src="img/003-boton-de-logo-del-twitter.png"></a>
+                <a href="http://youtube.com/" target="_blanck"><img src=" img/002-youtube.png"></a>
+            </article>
+        </section>
     </footer>
 </body>
 
