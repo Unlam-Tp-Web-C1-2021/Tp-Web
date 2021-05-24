@@ -88,25 +88,6 @@
     margin-top: 8px;
 }
 
-.footer-info {
-    flex: 0 1 28%;
-    padding: 16px;
-    border: white solid 2px;
-}
-
-#logo-main {
-    display: inline;
-    width: 64px;
-}
-
-#container-logo {
-    display: inline;
-}
-
-#article-steps {
-    background-color: forestgreen;
-}
-
 #container-steps {
     display: flex;
     flex-wrap: wrap;
@@ -137,13 +118,4 @@
 
 #container-medios-de-pagos {
     height: 240px;
-}
-
-#container-footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 80%;
-    padding: 24px;
-    margin: auto;
 }

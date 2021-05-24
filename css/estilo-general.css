@@ -23,6 +23,54 @@ h1 {
     color: lightseagreen;
 }
 
+footer {
+    background-color: darkolivegreen;
+}
+
+footer section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+footer article {
+    font-weight: bold;
+    width: 30%;
+    text-align: center;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+footer p {
+    margin: 5px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #a07b9d;
+    border-radius: 10px;
+}
+
+footer li {
+    list-style: none;
+    margin: 5px;
+}
+
+footer img {
+    max-width: 50px;
+}
+
+footer h3 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
 .nav-main {
     background-color: #222831;
 }
@@ -75,54 +123,6 @@ h1 {
 #logo-main {
     display: inline;
     width: 64px;
-}
-
-footer {
-    background-color: darkolivegreen;
-}
-
-footer section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: stretch;
-}
-
-footer article {
-    font-weight: bold;
-    width: 30%;
-    text-align: center;
-    padding: 5px;
-    box-sizing: border-box;
-}
-
-footer p {
-    margin: 5px;
-}
-
-footer a {
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
-}
-
-footer a:hover {
-    color: #a07b9d;
-    border-radius: 10px;
-}
-
-footer li {
-    list-style: none;
-    margin: 5px;
-}
-
-footer img {
-    max-width: 50px;
-}
-
-footer h3 {
-    font-weight: bold;
-    font-size: 20px;
 }
 
 .container-header {
@@ -194,4 +194,32 @@ footer h3 {
     text-decoration: underline;
     color: dodgerblue;
     background-color: white;
+}
+
+.footer-info {
+    flex: 0 1 28%;
+    padding: 16px;
+    border: white solid 2px;
+}
+
+#logo-main {
+    display: inline;
+    width: 64px;
+}
+
+#container-logo {
+    display: inline;
+}
+
+#article-steps {
+    background-color: forestgreen;
+}
+
+#container-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    padding: 24px;
+    margin: auto;
 }
