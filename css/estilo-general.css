@@ -23,6 +23,36 @@ h1 {
     color: lightseagreen;
 }
 
+.nav-main {
+    background-color: #222831;
+}
+
+.nav-main ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-main li {
+    list-style: none;
+}
+
+.nav-main a {
+    display: block;
+    list-style: none;
+    font-size: 1em;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    padding: 2em;
+}
+
+.nav-main a:hover {
+    text-decoration: underline;
+    color: #222831;
+    background-color: white;
+}
+
 .menu ul {
     flex-direction: row;
     justify-content: space-around;
