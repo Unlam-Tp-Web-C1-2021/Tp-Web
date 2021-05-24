@@ -11,12 +11,13 @@ body {
 }
 
 header {
-    background-color: darkslateblue;
+    background-color: #30475e;
     padding: 16px 32px;
 }
 
 main {
     text-align: center;
+    background-color: #f0f1f2;
 }
 
 h1 {
@@ -99,10 +100,11 @@ footer h3 {
 .container-search {
     display: flex;
     justify-content: center;
-    border: black solid 2px;
+    border: #4e5761 solid 2px;
     border-radius: 16px;
     padding: 8px;
     width: 30%;
+    background-color: #4e5761;
 }
 
 .container-search input {
@@ -112,8 +114,23 @@ footer h3 {
     font-size: 16px;
 }
 
+.container-search:focus-within {
+    background-color: white;
+}
+
+.container-search input {
+    background-color: #4e5761;
+    color: white;
+}
+
 .container-search input:focus {
+    background-color: white;
+    color: #4e5761;
     outline: none;
+}
+
+.icon-search {
+    content: url(../img/search.svg);
 }
 
 .nav-main {
