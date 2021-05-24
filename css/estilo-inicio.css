@@ -24,6 +24,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 24px;
+    
 }
 
 .curso-destacado-item {
@@ -31,6 +32,7 @@
     padding: 16px;
     border: black solid 2px;
     margin-bottom: 48px;
+    background-color: white;
 }
 
 .container-curso-image {
@@ -100,16 +102,7 @@
     width: 100%;
 }
 
-#article-medio-de-pagos {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    background-color: cadetblue;
-}
 
-#container-medios-de-pagos {
-    height: 240px;
-}
 
 #container-footer {
     display: flex;
@@ -119,3 +112,4 @@
     padding: 24px;
     margin: auto;
 }
+

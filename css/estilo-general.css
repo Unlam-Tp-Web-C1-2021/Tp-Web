@@ -17,8 +17,9 @@ header {
 
 main {
     text-align: center;
+    background-image: url(https://freefrontend.com/assets/img/css-background-patterns/css-pattern-3.png);
+ 
 }
-
 h1 {
     color: lightseagreen;
 }
