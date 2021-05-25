@@ -46,68 +46,74 @@
             </ul>
         </nav>
 
-        <section>
-            <article>
-                <form action="#" method="GET">
-                    <label for="nombre">Nombre y Apellido:</label>
-                    <input type="text" id="nombre" name="nombre" required placeholder="Ingrese su nombre y apellido"> <br><br>
+        <section class="section-contacto">
+            <h1>CONTACTO</h1>
 
-                    <label for="correo">Email:</label>
-                    <input type="email" id="correo" name="correo"> <br><br>
+            <article class="acticle-contacto">
+                <form class="form-contacto" action="#" method="GET">
+                    <!-- clase creada para darle el mismo estilo en el css y que no le sobre escriba el style del input del submit -->
+                    <div class="container-form-contacto">
+                        <label for="nya">Nombre y Apellido</label>
+                        <input class="bordes-redondeados-solid" type="text" id="nya" name="nombre" placeholder="Ingrese su nombre y apellido" required>
+    
+                        <label for="email">Email</label>
+                        <input class="bordes-redondeados-solid" type="email" id="email" name="correo" placeholder="Ingre su email" required>
+    
+                        <label for="curso">Curso</label>
+                        <select class="bordes-redondeados-solid" name="curso" id="curso" required>
+                            <option value="1">Programación</option>
+                            <option value="2">Diseño</option>
+                        </select> 
 
-                    <label for="consulta">Consulta:</label> <br>
-                    <textarea name="consulta" id="consulta" cols="30" rows="10" maxlength="10"></textarea> <br><br>
+                        <label for="consulta">Consulta</label>
+                        <textarea class="bordes-redondeados-solid" name="consulta" id="consulta" cols="30" rows="10" maxlength="10" required></textarea>                       
+                    </div>
 
-                    <label for="provincia">Provincia</label>
-                    <select name="provincia" id="provincia">
-                    <option value="1">Buenos Aires</option>
-                    <option value="2">CABA</option>
-                </select>
-
-
-                    <input type="submit" value="enviar">
+                    <input class="button-submit-contacto button" type="submit" value="Enviar">
                 </form>
             </article>
-            <aside>
-                <h2>Datos de Contacto</h2>
-                <p>Instagram: <a href="http://instagram.com" target="_blanck">@Instagram</a></p>
-                <p>Facebook: <a href="http://www.facebook.com" target="_blanck">Facebook</a></p>
-                <p>Mail: <a href="#">info@cursos-online.com</a></p>
-                <p>Telefono: <span>11 2222-3333</span></p>
-            </aside>
+
+            <article class="article-ubicacion">
+                <h2>UBICACIÓN</h2>
+                <iframe class="mapa-ubicacion-contacto bordes-redondeados-solid" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13125.981945658838!2d-58.573808612780766!3d-34.66744216389612!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8867107f425fade5!2sUniversidad+Nacional+de+La+Matanza!5e0!3m2!1ses!2sar!4v1558465262229!5m2!1ses!2sar"></iframe>
+            </article>
         </section>
-        <section>
-            <article class="mapa">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13125.981945658838!2d-58.573808612780766!3d-34.66744216389612!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8867107f425fade5!2sUniversidad+Nacional+de+La+Matanza!5e0!3m2!1ses!2sar!4v1558465262229!5m2!1ses!2sar"></iframe>
-        </section>
+                
     </main>
     <footer>
-        <section>
-            <article>
-                <p>Joaquin Romero</p>
-                <p>Daira Garraza</p>
-                <p>Sebastian Rueda</p>
-                <p>Matias Romé</p>
-            </article>
+        <div id="container-footer">
+            <div class="footer-info">
+                <h3>Datos del grupo</h3>
+                <br>
 
-            <nav>
                 <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="detalles-curso.html">Detalles del Curso</a></li>
-                    <li><a href="inscripcion.html">Inscripción a Curso</a></li>
-                    <li><a href="gift-card.html">Personaliza tu Gift Card</a></li>
-                    <li> <a href="calendario.html">Calendario</a></li>
+                    <li>Joaquin Romero</li>
+                    <li>Daira Garraza</li>
+                    <li>Sebastian Rueda</li>
+                    <li>Matías</li>
                 </ul>
-            </nav>
+            </div>
+            <div class="footer-info">
+                <h3>Menu inferior</h3>
+                <br>
 
-            <article>
-                <a href="http://instagram.com/" target="_blanck"> <img src="img/004-instagram.png"></a>
-                <a href="http://www.facebook.com/" target="_blanck"><img src="img/001-logo-de-facebook.png"></a>
-                <a href="http://twitter.com/" target="_blanck"><img src="img/003-boton-de-logo-del-twitter.png"></a>
-                <a href="http://youtube.com/" target="_blanck"><img src=" img/002-youtube.png"></a>
-            </article>
-        </section>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="gift-card.html">Gif Card</a></li>
+                    <li><a href="calendario.html">Calendario</a></li>
+                </ul>
+            </div>
+            <div class="footer-info">
+                <h3>Redes Sociales</h3>
+                <br>
+
+                <a href="http://instagram.com/lollapaloozaar" target="_blanck"> <img src="img/004-instagram.png"></a>
+                <a href="http://www.facebook.com/lollapaloozaar" target="_blanck"><img src="img/001-logo-de-facebook.png"></a>
+                <a href="http://twitter.com/lollapaloozaar" target="_blanck"><img src="img/003-boton-de-logo-del-twitter.png"></a>
+                <a href="http://youtube.com/lollapaloozaar" target="_blanck"><img src=" img/002-youtube.png"></a>
+            </div>
+        </div>
     </footer>
 </body>
 
