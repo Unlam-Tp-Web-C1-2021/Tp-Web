@@ -1,137 +1,211 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inscripción a curso</title>
-    <link rel="stylesheet" href="./css/estilo-general.css">
-    <link rel="stylesheet" href="./css/estilo-inscripción.css">
-    <link rel="stylesheet" href="./css/estilo-inicio.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/estilo-general.css" />
+    <link rel="stylesheet" href="./css/estilo-inscripcion.css" />
+  </head>
+  <body>
     <header>
-        <div class="container-header">
-            <div id="container-logo">
-                <img src="img/logo.png" alt="logo" id="logo-main">
-            </div>
-            <div class="container-search">
-                <datalist id="cursos">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </datalist>
-
-                <input type="text" name="buscador" list="cursos" placeholder="Buscar...">
-
-                <img src="img/search.svg" alt="buscador">
-            </div>
-            <div>
-                <img src="img/shopping.svg" alt="carrito">
-            </div>
+      <div class="container-header">
+        <div id="container-logo">
+          <img src="img/logo.png" alt="logo" id="logo-main" />
         </div>
+        <div class="container-search">
+          <datalist id="cursos">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </datalist>
+
+          <input
+            type="text"
+            name="buscador"
+            list="cursos"
+            placeholder="Buscar..."
+          />
+
+          <img src="img/search.svg" alt="buscador" />
+        </div>
+        <div>
+          <img src="img/shopping.svg" alt="carrito" />
+        </div>
+      </div>
     </header>
     <main>
-        
-        <nav class="nav-main">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li> <a href="contacto.html">Contacto</a></li>
-                <li> <a href="gif-card.html">Gif Card</a></li>
-                <li> <a href="calendario.html">Calendario</a></li>
-            </ul>
-        </nav>
+      <nav class="nav-main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="gif-card.html">Gift Card</a></li>
+          <li><a href="calendario.html">Calendario</a></li>
+        </ul>
+      </nav>
 
-        <div class="contenedor-form">
-            <h1>NOMBRE DEL CURSO</h1>
-             <h2>INSCRIPCIÓN</h2>
-             <div class="datos-form">
-                    <form action="#" method="POST">
-                    
-                    <label for="nombre"></label>
-                    <input type="text" name="nombre" id="nombre" placeholder="Ingrese su Nombre" required class="campo-form input-form">
-                    <label for="apellido"></label>
-                    <input type="text" name="apellido" id="apellido" placeholder="Ingrese su Apellido" required class="campo-form input-form">
-                    <label for="dni"></label>
-                    <input type="number" name="dni" id="dni" placeholder="Ingrese Número de Documento" required class="campo-form input-form"> 
-                    <img src="./img/menos.png" alt="" class="sacar-persona">
-                    
-                    <input type="text" name="nombre2" id="nombre2" placeholder="Ingrese su Nombre" required class="campo-form input-form">
-                    <input type="text" name="apellido2" id="apellido2" placeholder="Ingrese su Apellido" required class="campo-form input-form">
-                    <input type="number" name="dni2" id="dni2" placeholder="Ingrese Número de Documento" required class="campo-form input-form">
-                    <img src="./img/menos.png" alt="" class="sacar-persona">
+      <div class="contenedor-form">
+        <h1>NOMBRE DEL CURSO</h1>
+        <h2>INSCRIPCIÓN</h2>
+        <div class="datos-form">
+          <form action="#" method="POST">
+            <input
+              type="text"
+              name="nombre"
+              id="nombre"
+              placeholder="Ingrese su Nombre"
+              required
+              class="campo-form input-form"
+            />
 
-                    <input type="text" name="nombre3" id="nombre3" placeholder="Ingrese su Nombre" required class="campo-form input-form">
-                    <input type="text" name="apellido3" id="apellido3" placeholder="Ingrese su Apellido" required class="campo-form input-form">
-                    <input type="number" name="dni3" id="dni3" placeholder="Ingrese Número de Documento" required class="campo-form input-form">
-                    <img src="./img/menos.png" alt="" class="sacar-persona">
-                    
-                    <div class="container-agregar">
-                    <img src="./img/mas.png" alt="" class="agregar-persona">
-                    <p class="agregar">Agregar persona</p>
-                    </div>
+            <input
+              type="text"
+              name="apellido"
+              id="apellido"
+              placeholder="Ingrese su Apellido"
+              required
+              class="campo-form input-form"
+            />
 
-                    <div class="precio-btn ">
-                    <p class="precio">$000.00</p>
-                    <input type="submit" value="INSCRIBIRSE" class="btn-inscripcion input-form">
-                    </div>
-                </form>
+            <input
+              type="number"
+              name="dni"
+              id="dni"
+              placeholder="Ingrese Número de Documento"
+              required
+              class="campo-form input-form"
+            />
+            <img src="./img/menos.png" alt="" class="sacar-persona" />
+
+            <input
+              type="text"
+              name="nombre2"
+              id="nombre2"
+              placeholder="Ingrese su Nombre"
+              required
+              class="campo-form input-form"
+            />
+            <input
+              type="text"
+              name="apellido2"
+              id="apellido2"
+              placeholder="Ingrese su Apellido"
+              required
+              class="campo-form input-form"
+            />
+            <input
+              type="number"
+              name="dni2"
+              id="dni2"
+              placeholder="Ingrese Número de Documento"
+              required
+              class="campo-form input-form"
+            />
+            <img src="./img/menos.png" alt="" class="sacar-persona" />
+
+            <input
+              type="text"
+              name="nombre3"
+              id="nombre3"
+              placeholder="Ingrese su Nombre"
+              required
+              class="campo-form input-form"
+            />
+            <input
+              type="text"
+              name="apellido3"
+              id="apellido3"
+              placeholder="Ingrese su Apellido"
+              required
+              class="campo-form input-form"
+            />
+            <input
+              type="number"
+              name="dni3"
+              id="dni3"
+              placeholder="Ingrese Número de Documento"
+              required
+              class="campo-form input-form"
+            />
+            <img src="./img/menos.png" alt="" class="sacar-persona" />
+
+            <div class="container-agregar">
+              <img src="./img/mas.png" alt="" class="agregar-persona" />
+              <p class="agregar">Agregar persona</p>
             </div>
-        </div>
 
-        <div class="container-medio-pago">
-            <h2>MEDIOS DE PAGO</h2>
-            <div class="container-img-medio-pago">
-                <img src="img/paypal.png" alt="" class="img-medio-pago">
-                <img src="img/mastercard.png" alt="" class="img-medio-pago">
-                <img src="img/visa.png" alt="" class="img-medio-pago">
-                <img src="img/mercadopago.jpg" alt="" class="img-medio-pago mercadopago">
-                <img src="img/pagofacil.svg" alt="" class="img-medio-pago">
+            <div class="precio-btn">
+              <p class="precio">$000.00</p>
+              <input
+                type="submit"
+                value="INSCRIBIRSE"
+                class="btn-inscripcion input-form"
+              />
             </div>
+          </form>
         </div>
+      </div>
 
+      <div class="container-medio-pago">
+        <h2>MEDIOS DE PAGO</h2>
+        <div class="container-img-medio-pago">
+          <img src="img/paypal.png" alt="" class="img-medio-pago" />
+          <img src="img/mastercard.png" alt="" class="img-medio-pago" />
+          <img src="img/visa.png" alt="" class="img-medio-pago" />
+          <img
+            src="img/mercadopago.jpg"
+            alt=""
+            class="img-medio-pago mercadopago"
+          />
+          <img src="img/pagofacil.svg" alt="" class="img-medio-pago" />
+        </div>
+      </div>
     </main>
     <footer>
-        <div id="container-footer">
-            <div class="footer-info">
-                <h3>Datos del grupo</h3>
-                <br>
+      <div id="container-footer">
+        <div class="footer-info">
+          <h3>Datos del grupo</h3>
+          <br />
 
-                <ul>
-                    <li>Joaquin Romero</li>
-                    <li>Daira Garraza</li>
-                    <li>Sebastian Rueda</li>
-                    <li>Matías Romé</li>
-                </ul>
-            </div>
-            <div class="footer-info">
-                <h3>Menu inferior</h3>
-                <br>
-
-                <ul>
-                    <li><a href="inicio.html">Home</a></li>
-                <li> <a href="contacto.html">Contacto</a></li>
-                <li> <a href="gif-card.html">Gif Card</a></li>
-                <li> <a href="calendario.html">Calendario</a></li>
-                </ul>
-            </div>
-            <div class="footer-info">
-                <h3>Redes Sociales</h3>
-                <br>
-
-                <a href="http://instagram.com/lollapaloozaar" target="_blanck"> <img src="img/004-instagram.png"></a>
-                <a href="http://www.facebook.com/lollapaloozaar" target="_blanck"><img src="img/001-logo-de-facebook.png"></a>
-                <a href="http://twitter.com/lollapaloozaar" target="_blanck"><img src="img/003-boton-de-logo-del-twitter.png"></a>
-                <a href="http://youtube.com/lollapaloozaar" target="_blanck"><img src=" img/002-youtube.png"></a>
-            </div>
+          <ul>
+            <li>Joaquin Romero</li>
+            <li>Daira Garraza</li>
+            <li>Sebastian Rueda</li>
+            <li>Matías Romé</li>
+          </ul>
         </div>
+        <div class="footer-info">
+          <h3>Menu inferior</h3>
+          <br />
+
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="gift-card.html">Gif Card</a></li>
+            <li><a href="calendario.html">Calendario</a></li>
+          </ul>
+        </div>
+        <div class="footer-info">
+          <h3>Redes Sociales</h3>
+          <br />
+
+          <a href="http://instagram.com/lollapaloozaar" target="_blanck">
+            <img src="img/004-instagram.png"
+          /></a>
+          <a href="http://www.facebook.com/lollapaloozaar" target="_blanck"
+            ><img src="img/001-logo-de-facebook.png"
+          /></a>
+          <a href="http://twitter.com/lollapaloozaar" target="_blanck"
+            ><img src="img/003-boton-de-logo-del-twitter.png"
+          /></a>
+          <a href="http://youtube.com/lollapaloozaar" target="_blanck"
+            ><img src=" img/002-youtube.png"
+          /></a>
+        </div>
+      </div>
     </footer>
-
-
-
-
-
-</body>
+  </body>
 </html>

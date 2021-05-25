@@ -1,0 +1,138 @@
+body {
+    background-color: rgb(153, 238, 209);
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor {
+    padding: 10px;
+    width: 30%;
+}
+
+.vista-previa {
+    background-color: green;
+    height: 250px;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.titulo {
+    font-size: 60px;
+    margin: 0 auto;
+    padding-top: 70px;
+    overflow: hidden;
+}
+
+.fecha {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+
+.texto-centrado {
+    text-align: center;
+}
+
+.input-personalizar {
+    width: 80%;
+    padding: 6px 10px;
+    margin: 4px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.input-personalizar:focus {
+    outline: none;
+    box-shadow: 0px 0px 5px #61C5FA;
+    border: 1px solid #5AB0DB;
+    border-radius: 0;
+}
+
+.contenedor-de-personalizacion {
+    display: flex;
+}
+
+.circulo-color {
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+    border-radius: 15px;
+}
+
+input[type=radio] {
+    display: block;
+    margin: 0 auto;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.pink {
+    background-color: pink;
+}
+
+.tamanio-fuente>span {
+    font-size: 1.2em;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.ubicacion {
+    border: 1px solid pink;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    margin: 5px;
+}
+
+.ubicacion>div {
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    position: absolute;
+}
+
+.abajo {
+    bottom: 0px;
+}
+
+.derecha {
+    right: 0px;
+}
+
+.izquierda {
+    left: 0px;
+}
+
+.fondo-color {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+}
+
+label {
+    color: gray;
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}

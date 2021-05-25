@@ -3,25 +3,247 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalles del curso</title>
     <link rel="stylesheet" href="css/estilo-general.css">
-
+    <link rel="stylesheet" href="css/estilo-detalles.css">
+    <!-- Material Icons Outlines-->
+    <!-- https://github.com/google/material-design-icons/tree/master/font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined">
+    <!-- Stars -->
+    <!-- https://www.w3schools.com/howto/howto_css_star_rating.asp -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
 <body>
     <header>
-        <h1>Detalles del Curso</h1>
+        <div class="container-header">
+            <div id="container-logo">
+                <img src="img/logo.png" alt="logo" id="logo-main">
+            </div>
+            <div class="container-search">
+                <datalist id="cursos">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </datalist>
+
+                <input type="text" name="buscador" list="cursos" placeholder="Buscar...">
+
+                <img alt="buscador" class="icon-search">
+            </div>
+            <div>
+                <img src="img/shopping.svg" alt="carrito">
+            </div>
+        </div>
     </header>
-    <nav class="menu">
-        <ul>
-            <li><a href="inicio.html">Home</a></li>
-            <li> <a href="contacto.html">Contacto</a></li>
-            <li> <a href="gif-card.html">Gif Card</a></li>
-            <li> <a href="calendario.html">Calendario</a></li>
-        </ul>
-    </nav>
+    <main>
+        <section class="section-detalle-info">
+            <article class="article-detalle-info">
+                <img src="img/curso_progracion.jpg" alt="logo" id="img-curso">
+                
+                <div class="container-detalle-info">
+                    <h1>TITULO CURSO</h1>
+                    <p class="text-detalle-curso">Valor:</p>
+                    <p class="text-detalle-curso">Tiempo de dedicacion necesario:</p>
+                    <p class="text-detalle-curso">Descripcion del curso:</p>
+                    <p class="text-detalle-curso">Requisitos Previos</p>
 
+                    <a class="button" href="#">Inscribirse</a>
+
+                    <div class="container-contenido-clase">
+                        <h2>Contenidos por clase</h2>
+
+                        <div class="item-expand-contenido-clase">
+                            <p>Introducción</p>
+                            <span class="material-icons-outlined">expand_more</span>
+                        </div>
+                        <ol class="container-item-list-contenido-clase">
+                            <li class="item-list-container-clase">
+                                <input type="checkbox" class="checkbox-item-list">
+                                <div class="item-list-container-clase-text">
+                                    <p class="title-item-contenido">1. Introducción</p>
+                                    <p class="time-item-contenido">10 min</p>
+                                </div>
+                            </li>
+                            <li class="item-list-container-clase">
+                                <input type="checkbox" class="checkbox-item-list">
+                                <div class="item-list-container-clase-text">
+                                    <p class="title-item-contenido">2. ¿Cómo funcionará el curso?</p>
+                                    <p class="time-item-contenido">10 min</p>
+                                </div>
+                            </li>
+                            <li class="item-list-container-clase">
+                                <input type="checkbox" class="checkbox-item-list">
+                                <div class="item-list-container-clase-text">
+                                    <p class="title-item-contenido">3. Instalaciones iniciales - Editor de código y descargas</p>
+                                    <p class="time-item-contenido">10 min</p>
+                                </div>
+                            </li>
+                        </ol>
+                        <div class="item-expand-contenido-clase">
+                            <p>Unidad 1</p>
+                            <span class="material-icons-outlined">expand_more</span>
+                        </div>
+                        <div class="item-expand-contenido-clase">
+                            <p>Unidad 2</p>
+                            <span class="material-icons-outlined">expand_more</span>
+                        </div>
+                        <div class="item-expand-contenido-clase">
+                            <p>Unidad 3</p>
+                            <span class="material-icons-outlined">expand_more</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="article-docente">
+                <div class="container-docente">
+                    <img id="img-docente" src="img/curso_progracion.jpg" alt="docente-image">
+                <div class="container-docente-info">
+                    <h2>Nombre y apellido</h2>
+                    <div class="container-stars">
+                        <span class="fa fa-star star-docente star-docente-checked"></span>
+                        <span class="fa fa-star star-docente star-docente-checked"></span>
+                        <span class="fa fa-star star-docente star-docente-checked"></span>
+                        <span class="fa fa-star star-docente star"></span>
+                        <span class="fa fa-star star-docente star"></span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio sunt omnis distinctio veritatis qui in fugiat ad recusandae, quia, saepe esse, repellat asperiores numquam! Porro quo eaque nostrum suscipit ipsam?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. A ut dicta debitis incidunt pariatur minima totam, facere nesciunt aperiam tempore modi alias libero labore rerum, ipsam velit et quia. Veniam.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci tempora aliquam sed blanditiis eligendi porro dolorem, officia commodi fugit at veniam? Voluptas ducimus aut ratione aperiam facilis, id ullam explicabo.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit voluptates perspiciatis sapiente neque illo aliquid earum aliquam odit minima quia, quasi repudiandae, alias facere omnis ipsa ipsam non praesentium magnam.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, nobis ad a corrupti libero odit asperiores recusandae ipsam! Dignissimos illo neque tenetur nam odio laborum, voluptates eos non facere labore?
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat quae provident saepe dolorum eveniet unde beatae iure, ut exercitationem nobis quas iusto esse laborum nisi consequatur consectetur similique alias! Quae.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam doloremque mollitia possimus, fugiat similique nisi quibusdam magnam corporis optio eius fugit aperiam cum quae qui excepturi ullam sit vel molestias!
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur ex ad quibusdam optio saepe officiis debitis, beatae praesentium, esse eos cum sapiente molestias laudantium dolor minus provident animi dolores quo?
+                    </p>
+                </div>
+                </div>
+            </article>
+        </section>
+        <aside class="aside-otros-cursos">
+            <div class="article-cursos-destacados">
+                <h2>OTROS CURSOS</h2>
+                <!-- TODO: evaluar convertir en un slider -->
+                <div class="container-cursos-destacados">
+                    <!-- /////////////////////////////////// ITEMS ////////////////////////////////////////////// -->
+                    
+                    <div class="curso-destacado-item">
+                        <div class="container-curso-image">
+                            <!-- TODO IMAGEN -->
+                            <p class="curso-precio">$ Precio</p>
+                        </div>
+                        <div class="curso-detail">
+                            <div class="curso-detail-title">
+                                <p>Tiempo</p>
+                                <p>Nombre del Curso</p>
+                            </div>
+                            <p>Ver Detalle</p>
+                            <a href="inscripcion.html" class="curso-destacado-item-button">Comprar</a>
+                        </div>
+                    </div>
+
+                    <div class="curso-destacado-item">
+                        <div class="container-curso-image">
+                            <!-- TODO IMAGEN -->
+                            <p class="curso-precio">$ Precio</p>
+                        </div>
+                        <div class="curso-detail">
+                            <div class="curso-detail-title">
+                                <p>Tiempo</p>
+                                <p>Nombre del Curso</p>
+                            </div>
+                            <p>Ver Detalle</p>
+                            <a href="detalles-curso.html" class="curso-destacado-item-button">Comprar</a>
+                        </div>
+                    </div>
+
+                    <div class="curso-destacado-item">
+                        <div class="container-curso-image">
+                            <!-- TODO IMAGEN -->
+                            <p class="curso-precio">$ Precio</p>
+                        </div>
+                        <div class="curso-detail">
+                            <div class="curso-detail-title">
+                                <p>Tiempo</p>
+                                <p>Nombre del Curso</p>
+                            </div>
+                            <p>Ver Detalle</p>
+                            <a href="detalles-curso.html" class="curso-destacado-item-button">Comprar</a>
+                        </div>
+                    </div>
+
+                    <div class="curso-destacado-item">
+                        <div class="container-curso-image">
+                            <!-- TODO IMAGEN -->
+                            <p class="curso-precio">$ Precio</p>
+                        </div>
+                        <div class="curso-detail">
+                            <div class="curso-detail-title">
+                                <p>Tiempo</p>
+                                <p>Nombre del Curso</p>
+                            </div>
+                            <p>Ver Detalle</p>
+                            <a href="detalles-curso.html" class="curso-destacado-item-button">Comprar</a>
+                        </div>
+                    </div>
+
+                    <div class="curso-destacado-item">
+                        <div class="container-curso-image">
+                            <!-- TODO IMAGEN -->
+                            <p class="curso-precio">$ Precio</p>
+                        </div>
+                        <div class="curso-detail">
+                            <div class="curso-detail-title">
+                                <p>Tiempo</p>
+                                <p>Nombre del Curso</p>
+                            </div>
+                            <p>Ver Detalle</p>
+                            <a href="detalles-curso.html" class="curso-destacado-item-button">Comprar</a>
+                        </div>
+                    </div>
+
+                    <!-- /////////////////////////////////// ITEMS ////////////////////////////////////////////// -->
+                </div>
+            </div>
+        </aside>
+    </main>
+    <footer>
+        <div id="container-footer">
+            <div class="footer-info">
+                <h3>Datos del grupo</h3>
+                <br>
+
+                <ul>
+                    <li>Joaquin Romero</li>
+                    <li>Daira Garraza</li>
+                    <li>Sebastian Rueda</li>
+                    <li>Matías</li>
+                </ul>
+            </div>
+            <div class="footer-info">
+                <h3>Menu inferior</h3>
+                <br>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="gift-card.html">Gift Card</a></li>
+                    <li><a href="calendario.html">Calendario</a></li>
+                </ul>
+            </div>
+            <div class="footer-info">
+                <h3>Redes Sociales</h3>
+                <br>
+
+                <a href="http://instagram.com/lollapaloozaar" target="_blanck"> <img src="img/004-instagram.png"></a>
+                <a href="http://www.facebook.com/lollapaloozaar" target="_blanck"><img src="img/001-logo-de-facebook.png"></a>
+                <a href="http://twitter.com/lollapaloozaar" target="_blanck"><img src="img/003-boton-de-logo-del-twitter.png"></a>
+                <a href="http://youtube.com/lollapaloozaar" target="_blanck"><img src=" img/002-youtube.png"></a>
+            </div>
+        </div>
+    </footer>
 </body>
-
 </html>

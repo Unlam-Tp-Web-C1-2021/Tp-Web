@@ -1,0 +1,144 @@
+.section-detalle-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.article-detalle-info {
+    display: flex;
+    width: 90%;
+    margin: 4em auto;
+}
+
+.text-detalle-curso {
+    font-weight: 600;
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+
+.container-detalle-info {
+    width: 100%;
+    margin-left: 6em;
+}
+
+.container-detalle-info h1 {
+    margin-bottom: 16px;
+}
+
+.button {
+    margin-top: 1em;
+}
+
+.container-contenido-clase {
+    width: 50%;
+    margin-top: 4em;
+}
+
+.container-contenido-clase h2 {
+    margin-bottom: 1em;
+}
+
+.item-expand-contenido-clase {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    background-color: white;
+    border: #ADADAD solid 1px;
+}
+
+.item-expand-contenido-clase p {
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.container-container-contenido-clase {
+    width: 100%;
+    background-color: tomato;
+}
+
+.container-item-list-contenido-clase {
+    width: 100%;
+    background-color: #EBEBEB;
+    border: #ADADAD solid 1px;
+}
+
+.item-list-container-clase {
+    display: flex;
+    padding: 1em;
+    align-items: flex-start;
+    border: #ADADAD solid 1px;
+}
+
+.item-list-container-clase-text {
+    margin-left: 1em;
+}
+
+.title-item-contenido {
+    font-weight: normal;
+    display: inline;
+}
+
+.time-item-contenido {
+    font-weight: normal;
+    font-size: 0.8em;
+    color: #4e5761;
+}
+
+.checkbox-item-list {
+    display: inline;
+    margin-top: 4px;
+}
+
+.article-docente {
+    background-color: #30475e;
+}
+
+.container-docente {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: 2em auto;
+}
+
+.container-docente-info {
+    margin-left: 4em;
+}
+
+.container-docente-info h2 {
+    font-size: 1.5em;
+    color: white;
+}
+
+.container-docente-info p {
+    font-size: 1em;
+    color: white;
+}
+
+.container-stars {
+    margin: 1em 0;
+}
+
+.star-docente {
+    scale: 1.6;
+    margin-left: 0.4em;
+    margin-right: 0.2em;
+}
+
+.star-docente-checked {
+    color: yellow;
+}
+
+#img-curso {
+    display: inline;
+    width: 30em;
+    height: 15em;
+}
+
+#img-docente {
+    width: 11em;
+    height: 11em;
+    display: inline-block;
+    border-radius: 50%;
+    object-fit: cover;
+    align-self: flex-start;
+}
