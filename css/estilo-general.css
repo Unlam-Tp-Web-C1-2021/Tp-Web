@@ -36,7 +36,7 @@ li {
 }
 
 footer {
-    background-color: darkolivegreen;
+    background-color: #30475e;
 }
 
 footer section {
@@ -179,35 +179,6 @@ footer h3 {
     content: url(../img/search.svg);
 }
 
-.nav-main {
-    background-color: dodgerblue;
-}
-
-.nav-main ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-}
-
-.nav-main li {
-    list-style: none;
-}
-
-.nav-main a {
-    display: block;
-    list-style: none;
-    font-size: 16px;
-    text-decoration: none;
-    color: white;
-    padding: 16px;
-}
-
-.nav-main a:hover {
-    text-decoration: underline;
-    color: dodgerblue;
-    background-color: white;
-}
-
 .footer-info {
     flex: 0 1 28%;
     padding: 16px;
@@ -233,7 +204,6 @@ footer h3 {
 .article-cursos-destacados h2 {
     display: block;
     text-align: center;
-    width: 100%;
 }
 
 .container-cursos-destacados {
@@ -269,7 +239,6 @@ footer h3 {
     position: relative;
     border-radius: 0.5em 0.5em 0 0;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    background-color: blue;
 }
 
 .curso-precio {
@@ -277,7 +246,8 @@ footer h3 {
     right: 0;
     bottom: 16px;
     padding: 8px;
-    background-color: brown;
+    color: white;
+    background-color: #222831;
 }
 
 .curso-detail {
@@ -296,10 +266,9 @@ footer h3 {
 }
 
 .curso-destacado-item-button {
-    display: inline-block;
-    padding: 8px;
-    background-color: blueviolet;
-    margin-top: 8px;
+    padding: 0.5em;
+    margin-top: 1em;
+    font-size: 0.9em;
 }
 
 /* /////////////////////////////////////////////////////// CURSO ITEM ///////////////////////////////////////////////////////// */
@@ -311,10 +280,6 @@ footer h3 {
 
 #container-logo {
     display: inline;
-}
-
-#article-steps {
-    background-color: forestgreen;
 }
 
 #container-footer {

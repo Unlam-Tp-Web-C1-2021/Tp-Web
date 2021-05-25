@@ -1,6 +1,6 @@
 .container-banner-main {
     width: 100%;
-    height: 240px;
+    height: 24em;
     background-color: firebrick;
 }
 
@@ -11,6 +11,45 @@
 
 .steps-placeholder {
     height: 160px;
+}
+
+.container-categorias {
+    width: 90%;
+    margin: auto;
+    margin-top: 4em;
+}
+
+.container-categorias h2 {
+    display: block;
+    text-align: center;
+}
+
+.container-items-categorias {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+.item-categoria {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-categoria-img {
+    display: flex;
+    justify-items: center;
+    width: 8em;
+    height: 8em;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1em;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.item-categoria-title {
+    font-size: 1em;
+    font-weight: 500;
+    text-align: center;
 }
 
 #container-steps {
