@@ -1,3 +1,5 @@
+/* TODO: Unificar clases que pueden ser redundantes porque hay varias clases que tienen las mismas propiedades */
+
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 * {
@@ -272,6 +274,11 @@ footer h3 {
 }
 
 /* /////////////////////////////////////////////////////// CURSO ITEM ///////////////////////////////////////////////////////// */
+
+.bordes-redondeados-solid {
+    border-radius: 0.5em;
+    border: solid #4e5761 0.1em;
+}
 
 #logo-main {
     display: inline;
