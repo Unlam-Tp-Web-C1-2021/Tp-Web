@@ -132,6 +132,10 @@
     color: yellow;
 }
 
+.star-docente-unchecked {
+    color: white;
+}
+
 #img-curso {
     display: inline;
     width: 30em;
