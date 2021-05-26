@@ -286,6 +286,17 @@ footer h3 {
     font-weight: bold;
 }
 
+.ver-datalle-link {
+    color: #4e5761;
+    font-weight: 600;
+    display: block;
+    margin-top: 0.5em;
+}
+
+.ver-datalle-link:visited {
+    color: #4e5761;
+}
+
 .curso-destacado-item-button {
     margin-top: 1em;
     font-size: 0.9em;
