@@ -331,6 +331,10 @@ footer h3 {
 
 /* /////////////////////////////////////////////////////// FOOTER CLASS ///////////////////////////////////////////////////////// */
 
+.span-normal-texto {
+    font-weight: normal;
+}
+
 #logo-main {
     display: inline;
     width: 64px;
