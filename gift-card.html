@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <title>Personaliza tu Gift Card</title>
     <link rel="stylesheet" href="css/estilo-gift-card.css">
-
     <link rel="stylesheet" href="css/estilo-general.css">
 
 </head>
@@ -44,22 +43,21 @@
                 <li> <a href="calendario.html">Calendario</a></li>
             </ul>
         </nav>
-        <section>
-            <article class="contenedor">
+        <section class="section-gift-card">
+            <article class="article-vista-previa">
                 <div class="vista-previa">
-                    <div class="titulo texto-centrado">
-                        <span id="tituloVistaPrevia">Nombre Destinatario</span>
-                    </div>
-                    <div class="fecha">
-                        <span id="fechaVistaPrevia">10 de Junio, 18hs</span>
+                    <p class="vista-previa-precio">$ Precio</p>
+                    <div class="container-text-vista-previa">
+                        <p id="gift-card-para-text">GIFT CARD para</p>
+                        <p id="destinatario-text">Destinatario</p>
                     </div>
                 </div>
-                <div class="texto-centrado">VISTA PREVIA DE RESULTADO DE PERSONALIZACION</div>
+                <div class="texto-centrado"><p>VISTA PREVIA DE RESULTADO<br>DE PERSONALIZACIÓN</p></div>
             </article>
 
-            <article class="contenedor">
+            <article class="article-personalizar">
                 <form>
-                    <span>Personalización de Gift Card</span>
+                    <h1>Personalización de Gift Card</h1>
 
                     <div>
                         <input class="input-personalizar" id="tituloGiftCard" type="text" name="tituloGiftCard" placeholder="Destinatario">
@@ -162,7 +160,7 @@
                             <input type="radio" name="fondo" value="pink">
                         </div>
                     </div>
-                    <button type="submit" class="boton">Confirmar</button>
+                    <button type="submit" class="button-confirmar button">Confirmar</button>
                 </form>
             </article>
         </section>
@@ -170,32 +168,36 @@
     </main>
 
     <footer>
-        <section>
-            <article>
-                <p>Joaquin Romero</p>
-                <p>Daira Garraza</p>
-                <p>Sebastian Rueda</p>
-                <p>Matias Romé</p>
-            </article>
+        <div class="container-footer">
+            <div class="footer-info">
+                <h3>Datos del grupo</h3>
 
-            <nav>
                 <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="detalles-curso.html">Detalles del Curso</a></li>
-                    <li><a href="inscripcion.html">Inscripción a Curso</a></li>
-                    <li><a href="gift-card.html">Personaliza tu Gift Card</a></li>
-                    <li> <a href="calendario.html">Calendario</a></li>
+                    <li>Joaquin Romero</li>
+                    <li>Daira Garraza</li>
+                    <li>Sebastian Rueda</li>
+                    <li>Matías Romé</li>
                 </ul>
-            </nav>
+            </div>
+            <div class="footer-info">
+                <h3>Menu inferior</h3>
 
-            <article>
-                <a href="http://instagram.com/" target="_blanck"> <img src="img/004-instagram.png"></a>
-                <a href="http://www.facebook.com/" target="_blanck"><img src="img/001-logo-de-facebook.png"></a>
-                <a href="http://twitter.com/" target="_blanck"><img src="img/003-boton-de-logo-del-twitter.png"></a>
-                <a href="http://youtube.com/" target="_blanck"><img src=" img/002-youtube.png"></a>
-            </article>
-        </section>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="gift-card.html">Gif Card</a></li>
+                    <li><a href="calendario.html">Calendario</a></li>
+                </ul>
+            </div>
+            <div class="footer-info">
+                <h3>Redes Sociales</h3>
+
+                <a href="https://www.unlam.edu.ar/" target="_blanck"> <img src="img/004-instagram.png"></a>
+                <a href="https://www.unlam.edu.ar/" target="_blanck"><img src="img/001-logo-de-facebook.png"></a>
+                <a href="https://www.unlam.edu.ar/" target="_blanck"><img src="img/003-boton-de-logo-del-twitter.png"></a>
+                <a href="https://www.unlam.edu.ar/" target="_blanck"><img src=" img/002-youtube.png"></a>
+            </div>
+        </div>
     </footer>
 </body>
 

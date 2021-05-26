@@ -1,22 +1,52 @@
-body {
-    background-color: rgb(153, 238, 209);
+label {
+    font-weight: 600;
+    display: block;
+    margin-top: 1em;
 }
 
-section {
+.section-gift-card {
+    width: 90%;
+    margin: auto;
+    padding: 4em 0;
     display: flex;
     justify-content: center;
 }
 
-.contenedor {
-    padding: 10px;
-    width: 30%;
+.article-vista-previa {
+    width: 32em;
 }
 
 .vista-previa {
-    background-color: green;
-    height: 250px;
     position: relative;
+    width: 100%;
+    height: 18em;
     margin-bottom: 15px;
+    background-color: green;
+}
+
+.vista-previa-precio {
+    width: 20%;
+    display: inline;
+    padding: 0.5em;
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #222831;
+}
+
+.container-text-vista-previa {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.article-personalizar {
+    width: 40%;
+    margin-left: 4em;
 }
 
 .titulo {
@@ -40,8 +70,8 @@ section {
 
 .input-personalizar {
     width: 80%;
-    padding: 6px 10px;
-    margin: 4px 0;
+    padding: 0.5em;
+    margin-top: 1em;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -57,18 +87,19 @@ section {
 
 .contenedor-de-personalizacion {
     display: flex;
+    margin-top: 0.5em;
+    gap: 1em;
 }
 
 .circulo-color {
     height: 30px;
     width: 30px;
-    margin: 5px;
     border-radius: 15px;
 }
 
 input[type=radio] {
     display: block;
-    margin: 0 auto;
+    margin: 0.5em auto;
 }
 
 .red {
@@ -130,9 +161,15 @@ input[type=radio] {
     margin: 5px;
 }
 
-label {
-    color: gray;
-    display: block;
-    margin-bottom: 10px;
-    margin-top: 10px;
+.button-confirmar {
+    margin-top: 2em;
+}
+
+#gift-card-para-text {
+    font-size: 1em;
+}
+
+#destinatario-text {
+    font-size: 3em;
+    font-weight: bold;
 }
