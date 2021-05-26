@@ -6,12 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calendario</title>
     <link rel="stylesheet" href="css/estilo-general.css">
-
+    <link rel="stylesheet" href="css/estilo-calendario.css">
 </head>
 
 <body>
     <header>
-        <h1>Calendario de Cursos</h1>
+        <div class="container-header">
+            <div id="container-logo">
+                <img src="img/logo.png" alt="logo" id="logo-main">
+            </div>
+            <div class="container-search">
+                <datalist id="cursos">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </datalist>
+
+                <input type="text" name="buscador" list="cursos" placeholder="Buscar...">
+
+                <img alt="buscador" class="icon-search">
+            </div>
+            <div>
+                <img src="img/shopping.svg" alt="carrito">
+            </div>
+        </div>
     </header>
     <nav class="nav-main">
         <ul>
@@ -22,9 +42,11 @@
         </ul>
     </nav>
     <main>
-
+        <!-- TODO -->
+        <h1>Calendario</h1>
     </main>
-    <footer>
+    <!-- Para esta entrega SOLO se va a usar este estylo dentro del html para poder ubicar el footer en el bottom -->
+    <footer style="position: absolute; bottom: 0; width: 100%;">
         <div class="container-footer">
             <div class="footer-info">
                 <h3>Datos del grupo</h3>
