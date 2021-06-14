@@ -14,7 +14,7 @@ body {
 
 header {
     background-color: #30475e;
-    padding: 16px 32px;
+    padding: 1em 2em;
 }
 
 h1 {
@@ -98,13 +98,14 @@ footer h3 {
 }
 
 .nav-main ul {
-    display: flex;
+    display: block;
     justify-content: center;
     list-style: none;
 }
 
 .nav-main li {
     list-style: none;
+    text-align: center;
 }
 
 .nav-main a {
@@ -135,7 +136,7 @@ footer h3 {
     border: #4e5761 solid 2px;
     border-radius: 16px;
     padding: 8px;
-    width: 30%;
+    width: 60%;
     background-color: #4e5761;
 }
 
@@ -192,45 +193,12 @@ footer h3 {
 }
 
 .container-cursos-destacados {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: block;
     margin-top: 2em;
 }
 
-/* 
-    información sobre que hace el simbolo ">"
-    https://techbrij.com/css-selector-adjacent-child-sibling
-*/
-
-/* 
-    Post de como se hizo el espaciado en los ítems de los cursos
-    https://stackoverflow.com/a/39862756/13155477
-*/
-
-/*
-    align last row columns to the left
-    3n - 3 columns per row
-*/
-.container-cursos-destacados > div:nth-child(4n) {
-    margin-right: 0;
-}
-  
-.container-cursos-destacados::after {
-    content: '';
-    flex: auto;
-}
-
-/* 
-    remove top margin from first row
-    -n+3 - 3 columns per row 
-*/
-.container-cursos-destacados > div:nth-child(-n+4) {
-    margin-top: 0;
-}
-
 .curso-destacado-item {
-    width: calc(1/4*100% - (1 - 1/4) * 2em);
+    width: 100%;
     margin: 2em 2em 0 0;
     border-radius: 0.5em;
     cursor: pointer;
@@ -252,6 +220,7 @@ footer h3 {
     width: 100%;
     height: 240px;
     position: relative;
+    overflow: hidden;
     border-radius: 0.5em 0.5em 0 0;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
@@ -313,17 +282,19 @@ footer h3 {
 /* /////////////////////////////////////////////////////// FOOTER CLASS ///////////////////////////////////////////////////////// */
 
 .container-footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: block;
     width: 80%;
-    padding: 4em 0;
     margin: auto;
+    padding: 4em 0;
+}
+
+/* Le agrego un margen al segundo hijo del contenedor */
+.container-footer > :nth-child(2) {
+    margin: 3em 0;
 }
 
 .footer-info {
-    flex: 0 1 28%;
-    padding: 16px;
+    padding: 1em;
     border: white solid 2px;
     justify-content: center;
     text-align: center;
@@ -342,4 +313,54 @@ footer h3 {
 
 #container-logo {
     display: inline;
+}
+
+/* 720px */
+@media screen and (min-width: 45em) {
+    .nav-main ul {
+        display: flex;
+    }
+
+    .container-cursos-destacados {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2em;
+    }
+    
+    .curso-destacado-item {
+        width: 100%;
+        border-radius: 0.5em;
+        cursor: pointer;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        margin: 0;
+    }
+
+    .container-footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .container-footer :nth-child(2) {
+        margin: 0;
+    }
+
+    .footer-info {
+        flex: 0 1 28%;
+    }
+}
+
+/* HD */
+@media screen and (min-width: 80em) {
+    .container-cursos-destacados {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* Full HD */
+@media screen and (min-width: 120em) {
+    .container-cursos-destacados {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }
