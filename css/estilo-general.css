@@ -15,6 +15,7 @@ body {
 header {
     background-color: #30475e;
     padding: 1em 2em;
+    position: relative;
 }
 
 h1 {
@@ -130,6 +131,80 @@ footer h3 {
     align-items: center;
 }
 
+.shopping-container {
+    position: relative;
+}
+
+.shopping-counter-container {
+    display: flex;
+    width: 1.6em;
+    height: 1.6em;
+    position: absolute;
+    right: -0.5em;
+    top: -0.5em;
+    z-index: 2;
+    border-radius: 50%;
+    background-color: red;
+    align-items: center;
+}
+
+.shopping-counter {
+    display: inline;
+    margin: auto;
+    color: white;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.shopping-list-container {
+    width: 24em;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: calc(100% - 1em);
+    margin-right: 0.5em;
+    background-color: white;
+    border-radius: 1em;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.shopping-container li {
+    display: block;
+}
+
+.shopping-item-container {
+    display: flex;
+    padding: 1em;
+    justify-items: center;
+}
+
+.shopping-item-img {
+    width: 4em;
+    height: 4em;
+    object-fit: cover;
+    display: inline;
+    margin-right: 1em;
+    border-radius: 50%;
+}
+
+.shopping-item-text {
+    width: 100%;
+    margin-right: 1em;
+    display: flex;
+}
+
+.shopping-item-text p {
+    margin: auto 0;
+}
+
+.shopping-item-separator {
+    width: 100%;
+    height: 1px;
+    background-color: gray;
+    display: block;
+}
+
 .container-search {
     display: flex;
     justify-content: center;
@@ -176,6 +251,10 @@ footer h3 {
 
 .button:visited {
     color: white;
+}
+
+.button-remove-shopping {
+    background-color: #e62f2f;
 }
 
 /* Evaluar si después de la entrega esto sigue acá o vuelve al style del index */
@@ -288,7 +367,7 @@ footer h3 {
     padding: 4em 0;
 }
 
-/* Le agrego un margen al segundo hijo del contenedor */
+/* Le agrego un margen al segundo hijo del contenedor para que sea responsive para despositivos mobiles */
 .container-footer > :nth-child(2) {
     margin: 3em 0;
 }

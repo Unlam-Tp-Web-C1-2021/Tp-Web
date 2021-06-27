@@ -8,6 +8,7 @@
     <title>Inicio</title>
     <link rel="stylesheet" href="css/estilo-general.css">
     <link rel="stylesheet" href="css/estilo-index.css">
+    <script src="js/general.js"></script>
 </head>
 
 <body>
@@ -29,18 +30,21 @@
 
                 <img alt="buscador" class="icon-search">
             </div>
-            <div>
+            <div class="shopping-container">
                 <img src="img/shopping.svg" alt="carrito">
+                <div class="shopping-counter-container"><p class="shopping-counter"></p></div>
             </div>
         </div>
+        <ul class="shopping-list-container">
+        </ul>
     </header>
     <main>
         <nav class="nav-main">
             <ul>
-                <li> <a href="index.html">Home</a></li>
-                <li> <a href="contacto.html">Contacto</a></li>
-                <li> <a href="gift-card.html">Gift Card</a></li>
-                <li> <a href="calendario.html">Calendario</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="gift-card.html">Gift Card</a></li>
+                <li><a href="calendario.html">Calendario</a></li>
             </ul>
         </nav>
         <section>
@@ -76,7 +80,7 @@
                 <div class="container-cursos-destacados">
                     <!-- /////////////////////////////////// ITEMS ////////////////////////////////////////////// -->
                     
-                    <div class="curso-destacado-item scale-animation">
+                    <!-- <div class="curso-destacado-item scale-animation">
                         <div class="container-curso-image">
                             <img src="img/imagencursot.jpg" alt="">
                             <p class="curso-precio">$ 1400</p>
@@ -87,7 +91,7 @@
                                 <p>Photoshop Básico</p>
                             </div>
                             <a href="detalles-curso.html" class="ver-datalle-link">Ver Detalle</a>
-                            <a href="inscripcion.html" class="curso-destacado-item-button button">Comprar</a>
+                            <a href="" class="curso-destacado-item-button button">Comprar</a>
                         </div>
                     </div>
 
@@ -102,7 +106,7 @@
                                 <p>Adobe Premiere Básico</p>
                             </div>
                             <a href="detalles-curso.html" class="ver-datalle-link">Ver Detalle</a>
-                            <a href="inscripcion.html" class="curso-destacado-item-button button">Comprar</a>
+                            <p href="/" class="curso-destacado-item-button button" id="button-buy">Comprar</p>
                         </div>
                     </div>
 
@@ -224,7 +228,7 @@
                             <a href="detalles-curso.html" class="ver-datalle-link">Ver Detalle</a>
                             <a href="detalles-curso.html" class="curso-destacado-item-button button">Comprar</a>
                         </div>
-                    </div>
+                    </div> -->
 
                     <!-- /////////////////////////////////// ITEMS ////////////////////////////////////////////// -->
                 </div>
