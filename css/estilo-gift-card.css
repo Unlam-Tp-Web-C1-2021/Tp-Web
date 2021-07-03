@@ -173,3 +173,43 @@ input[type=radio] {
     font-size: 3em;
     font-weight: bold;
 }
+
+.rosa{
+    color: pink;
+}
+
+.rojo{
+    color: red;
+}
+
+.azul{
+    color: blue;
+}
+
+.verde{
+    color: green;
+}
+
+.naranja{
+    color: orange;
+}
+
+.arribaIzquierda{
+    top: 0;
+    left: 0;
+}
+
+.arribaDerecha{
+    top: 0;
+    right: 0;
+}
+
+.abajo{
+    bottom: 0;
+    right: 0;
+}
+
+.fecha{
+    position: absolute;
+}
+

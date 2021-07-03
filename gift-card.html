@@ -6,7 +6,8 @@
     <title>Personaliza tu Gift Card</title>
     <link rel="stylesheet" href="css/estilo-gift-card.css">
     <link rel="stylesheet" href="css/estilo-general.css">
-
+    <script src="js/jquery.min.js"></script>
+    <script src="js/giftcard.js"></script>
 </head>
 
 <body>
@@ -45,18 +46,21 @@
         </nav>
         <section class="section-gift-card">
             <article class="article-vista-previa">
-                <div class="vista-previa">
+                <div id="vistaprevia" class="vista-previa">
                     <p class="vista-previa-precio">$ Precio</p>
                     <div class="container-text-vista-previa">
                         <p id="gift-card-para-text">GIFT CARD para</p>
                         <p id="destinatario-text">Destinatario</p>
+                    </div>
+                    <div class="fecha">
+                        <span id="fechaVistaPrevia">10 de Junio, 18hs</span>
                     </div>
                 </div>
                 <div class="texto-centrado"><p>VISTA PREVIA DE RESULTADO<br>DE PERSONALIZACIÓN</p></div>
             </article>
 
             <article class="article-personalizar">
-                <form>
+                <form method="POST">
                     <h1>Personalización de Gift Card</h1>
 
                     <div>
@@ -67,23 +71,23 @@
                     <div class="contenedor-de-personalizacion">
                         <div>
                             <div class="circulo-color red"></div>
-                            <input type="radio" name="color" value="red">
+                            <input type="radio" name="color" value="rojo">
                         </div>
                         <div>
                             <div class="circulo-color green"></div>
-                            <input type="radio" name="color" value="green">
+                            <input type="radio" name="color" value="verde">
                         </div>
                         <div>
                             <div class="circulo-color blue"></div>
-                            <input type="radio" name="color" value="blue">
+                            <input type="radio" name="color" value="azul">
                         </div>
                         <div>
                             <div class="circulo-color orange"></div>
-                            <input type="radio" name="color" value="orange">
+                            <input type="radio" name="color" value="naranja">
                         </div>
                         <div>
                             <div class="circulo-color pink"></div>
-                            <input type="radio" name="color" value="pink">
+                            <input type="radio" name="color" value="rosa">
                         </div>
                     </div>
 
