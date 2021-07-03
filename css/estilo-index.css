@@ -1,7 +1,17 @@
-.container-banner-main {
+#container-banner-main {
     width: 100%;
-    height: 24em;
+    height: 40em;
     background-color: firebrick;
+}
+
+.container-banner-main-item {
+    width: 100%;
+    height: 100%;
+}
+
+.container-banner-main-item img {
+    height: 100%;
+    object-fit: cover;
 }
 
 .container-steps-item {

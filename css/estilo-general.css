@@ -26,12 +26,20 @@ h2 {
     font-size: 1.2em;
 }
 
+p {
+    margin: 0;
+}
+
 a {
     text-decoration: none;
 }
 
 a:visited {
     color: black;
+}
+
+nav ul {
+    margin: 0;
 }
 
 li {

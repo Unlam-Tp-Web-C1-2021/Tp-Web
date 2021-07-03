@@ -6,9 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilo-general.css">
     <link rel="stylesheet" href="css/estilo-index.css">
     <script src="js/general.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -49,9 +51,32 @@
         </nav>
         <section>
             <article id="article-banner-main">
-                <div class="container-banner-main">
-                    <!-- TODO: Slider -->
-                </div>
+                <!--<div class="container-banner-main">
+                    <-!-- TODO: Slider -/->
+                </div>-->
+                <div id="container-banner" class="carousel slide">
+                    <div id="container-banner-main" class="carousel-inner">
+                      <!-- 
+                      <div class="carousel-item active container-banner-main-item">
+                        <img src="img/sadio-computacion-cuantica.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item container-banner-main-item">
+                        <img src="img/curso_progracion.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item container-banner-main-item">
+                        <img src="img/curso_progracion.jpg" class="d-block w-100" alt="...">
+                      </div>
+                       -->
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#container-banner" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#container-banner" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
             </article>
             <!-- <article id="article-steps">
                 <div id="container-steps">
@@ -237,7 +262,7 @@
                 <div class="container-categorias">
                     <h2>CATEGORÍAS</h2>
                     <!-- TODO: Slider -->
-                    <div class="container-items-categorias">
+                    <!-- <div class="container-items-categorias">
                         <div class="item-categoria">
                             <img class="item-categoria-img scale-animation" src="img/curso_progracion.jpg" alt="categoria">
                             <h3 class="item-categoria-title">Programación</h3>
@@ -270,7 +295,7 @@
                             <img class="item-categoria-img scale-animation" src="img/curso_progracion.jpg" alt="categoria">
                             <h3 class="item-categoria-title">Reparación de PC</h3>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </article>
         </section>

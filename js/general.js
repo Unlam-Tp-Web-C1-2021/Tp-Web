@@ -13,6 +13,13 @@ class Curso {
     }
 }
 
+class Banner {
+    constructor(image, description) {
+        this.image = image
+        this.description = description
+    }
+}
+
 // Lista de cursos que se can a mostrar en index
 const cursos = [
     new Curso(1, "Photoshop Básico", "img/imagencursot.jpg", 1400, 6),
@@ -22,6 +29,13 @@ const cursos = [
     new Curso(5, "Marketin Digital", "img/imagencursot.jpg", 1500, 12),
     new Curso(6, "HTML5, CSS3 y Javascript", "img/imagencursot.jpg", 1000, 15),
     new Curso(7, "Wordpress", "img/imagencursot.jpg", 1100, 9)
+]
+
+const imagesBanner = [
+    new Banner("img/sadio-computacion-cuantica.jpg", ""),
+    new Banner("img/curso_progracion.jpg", ""),
+    new Banner("img/sadio-computacion-cuantica.jpg", ""),
+    new Banner("img/curso_progracion.jpg", "")
 ]
 
 var addedToCartList = []
@@ -34,7 +48,29 @@ window.onload = function() {
     badgeContainer.addEventListener("mouseover", showShoppingList)
     badgeContainer.addEventListener("mouseout", hideShoppingList)
 
+    setupCarousel()
+
     loadCursos()
+}
+
+function setupCarousel() {
+    let containerItems = $("#container-banner-main")
+
+    imagesBanner.forEach((banner, pos) => {
+        containerItems.innerHTML += 
+        `
+        <div class="carousel-item ${ pos == 0 ? "active" : "" } container-banner-main-item">
+            <img src="${ banner.image }" class="d-block w-100" alt="${ banner.description }">
+        </div>
+        `
+    })
+
+    let container = $("#container-banner")
+    new bootstrap.Carousel(container, {
+        interval: 2000,
+        wrap: true,
+        touch: true
+      })
 }
 
 function showShoppingList(e) {
@@ -96,7 +132,7 @@ function addShopping(cursoId) {
     let curso = cursos.find(e => e.id == cursoId)
     addedToCartList.push(curso)
     
-    $(".shopping-counter").textContent = addedToCartList.length > 9 ? "+9" : addedToCartList.length
+    $(".shopping-counter").textContent = getCountItemsAdded()
 
     $(".shopping-list-container").innerHTML +=
     `
@@ -117,12 +153,14 @@ function addShopping(cursoId) {
 function removeShopping(cursoId) {
     let curso = cursos.find(e => e.id == cursoId)
     let pos = addedToCartList.indexOf(curso)
+    print(addedToCartList.length)
     removeAt(addedToCartList, pos)
+    print(addedToCartList.length)
 
     if (addedToCartList.length == 0) {
         $(".shopping-counter-container").style.display = "none"
     } else {
-        $(".shopping-counter").textContent = addShopping.length
+        $(".shopping-counter").textContent = getCountItemsAdded()
     }
 
     $("#" + ITEM_LIST_SHOPPING_ADDED_ID + cursoId).remove()
@@ -130,6 +168,10 @@ function removeShopping(cursoId) {
     let button = $("#" + BUTTON_ITEM_ID + cursoId)
     button.classList.remove(CLASS_REMOVER_CARRITO)
     button.textContent = "Agregar al carrito"
+}
+
+function getCountItemsAdded() {
+    return addedToCartList.length > 9 ? "+9" : addedToCartList.length
 }
 
 function print(message) {
