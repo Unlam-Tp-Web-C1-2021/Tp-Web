@@ -61,6 +61,9 @@
                         <label for="email">Email</label>
                         <input class="bordes-redondeados-solid" type="text" id="email" name="correo" placeholder="Ingre su email">
     
+                        <label for="telefono">Teléfono</label>
+                        <input class="bordes-redondeados-solid" type="text" id="telefono" name="telefono" placeholder="Ingrese su número de teléfono">
+
                         <label for="curso">Curso</label>
                         <select class="bordes-redondeados-solid" name="curso" id="curso">
                             <option value="1">Programación</option>
@@ -68,7 +71,8 @@
                         </select> 
 
                         <label for="consulta">Consulta</label>
-                        <textarea class="bordes-redondeados-solid" name="consulta" id="consulta" cols="30" rows="10" maxlength="10"></textarea>                       
+                        <textarea class="bordes-redondeados-solid" name="consulta" id="consulta" cols="30" rows="10" maxlength="1000"></textarea>  
+                        <p id="caracteres">Caractéres restantes: 1000</p>                          
                     </div>
                     <div id="mensaje" class="error"></div>
                     <input class="button-submit-contacto button" type="submit" value="Enviar">
