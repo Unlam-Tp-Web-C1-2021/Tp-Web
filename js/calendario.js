@@ -3,10 +3,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     var calendar = new FullCalendar.Calendar(calendarEl, {
       headerToolbar: {
+        
         left: 'prev,next today',
         center: 'title',
         right: 'dayGridMonth,listMonth'
       },
+      locale: 'es',
       initialDate: '2021-07-07',
       navLinks: true,
       businessHours: false, 
@@ -18,24 +20,24 @@ document.addEventListener('DOMContentLoaded', function() {
         {
           title: 'Photoshop Básico',
           start: '2021-07-07',
-          end: '2021-07-16'
+          
         },
         {
             title: 'Marketing Digital',
             start: '2021-07-16',
-            end: '2021-07-31', 
+            
             color: '#fcba03'
         },
         {
             title: 'HTML5, CSS3 y Javascript',
-            start: '2021-07-25',
-            end: '2021-08-10',
+            start: '2021-07-22',
+            
             color: '#c873c9'         
         },
         {
             title: 'Wordpress',
-            start: '2021-08-01',
-            end: '2021-08-15',
+            start: '2021-08-02',
+           
             color: '#8ec973'
         },
 

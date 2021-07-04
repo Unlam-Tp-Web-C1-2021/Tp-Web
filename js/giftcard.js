@@ -35,6 +35,10 @@ $(document).ready(function(){
         $(".fecha").addClass($(this).val());
     });
 
+    // Cambio precio
+    $("#precio").keyup(function(){
+        $(".vista-previa-precio").text("$"+$(this).val());
+    });
 });
 
 
