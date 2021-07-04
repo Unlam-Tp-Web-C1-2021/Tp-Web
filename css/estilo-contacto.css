@@ -62,3 +62,7 @@
 .button-submit-contacto {
     cursor: pointer;
 }
+
+.error {
+    color: red;
+}
