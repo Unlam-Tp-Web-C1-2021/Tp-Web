@@ -186,6 +186,7 @@ function removeAt(list, index) {
     list.splice(index, 1)
 }
 const container=document.getElementById('container')
+
         container.addEventListener('click',(e)=>{
             if(e.target.classList.contains('link') )
             {
