@@ -21,13 +21,7 @@ h2 {
     margin-bottom: 10px;
 }
 
-.sacar-persona {
-    display: inline-block;
-    width: 30px;
-    align-items: center;
-    vertical-align: middle;
-    cursor: pointer;
-}
+
 
 .campo-form {
     width: 25%;
@@ -74,25 +68,32 @@ h2 {
     
 }
 
-
-.agregar-persona {
-    display: inline-block;
-   
-    max-width: 50px;
-    vertical-align: middle;
+.agregar-img{
+    display: block;
+    max-height: 3em;
+    max-width: 3em;
+    margin-right: 1em;
+    padding: 0.5em;
     cursor: pointer;
+    
 }
-
-.agregar {
-    display: inline-block;
-    margin-left: 5px;
-    cursor: pointer;
+.agregar-persona {    
+    
+    
+    max-width: 100%;
+    vertical-align:middle;
     
 }
 
 .container-agregar {
-    justify-content:center;
-    align-items: center;
+    
+    display: flex;
+    position: relative;
+    border-color: black;
+    border-width: 1px;
+    justify-content:left;
+    align-items: left;
+    vertical-align: middle;
     padding: 5px;
     margin-top: 20px;
 }
@@ -123,3 +124,15 @@ h2 {
     border-radius: 50%;
     object-fit: cover;
 }
+
+.error{
+    display:inline-flex;
+    border-color: red;
+    color: red;
+    font-size: 0.9em;
+}
+
+.valid{
+    border-color: green;
+}
+

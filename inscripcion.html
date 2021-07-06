@@ -54,13 +54,14 @@
         <h1>NOMBRE DEL CURSO</h1>
         <h2>INSCRIPCIÓN</h2>
         <div class="datos-form">
-          <form action="#" method="POST">
+          <form class="inscripcion" id="inscripcion" name="inscripcion" action="#" method="POST">
+           <div class="persona" id="persona">
             <input
               type="text"
               name="nombre"
               id="nombre"
               placeholder="Ingrese su Nombre"
-              required
+              
               class="campo-form input-form"
             />
 
@@ -69,7 +70,7 @@
               name="apellido"
               id="apellido"
               placeholder="Ingrese su Apellido"
-              required
+              
               class="campo-form input-form"
             />
 
@@ -78,66 +79,21 @@
               name="dni"
               id="dni"
               placeholder="Ingrese Número de Documento"
-              required
+              
               class="campo-form input-form"
             />
-            <img src="./img/menos.png" alt="" class="sacar-persona" />
-
-            <input
-              type="text"
-              name="nombre2"
-              id="nombre2"
-              placeholder="Ingrese su Nombre"
-              required
-              class="campo-form input-form"
-            />
-            <input
-              type="text"
-              name="apellido2"
-              id="apellido2"
-              placeholder="Ingrese su Apellido"
-              required
-              class="campo-form input-form"
-            />
-            <input
-              type="number"
-              name="dni2"
-              id="dni2"
-              placeholder="Ingrese Número de Documento"
-              required
-              class="campo-form input-form"
-            />
-            <img src="./img/menos.png" alt="" class="sacar-persona" />
-
-            <input
-              type="text"
-              name="nombre3"
-              id="nombre3"
-              placeholder="Ingrese su Nombre"
-              required
-              class="campo-form input-form"
-            />
-            <input
-              type="text"
-              name="apellido3"
-              id="apellido3"
-              placeholder="Ingrese su Apellido"
-              required
-              class="campo-form input-form"
-            />
-            <input
-              type="number"
-              name="dni3"
-              id="dni3"
-              placeholder="Ingrese Número de Documento"
-              required
-              class="campo-form input-form"
-            />
-            <img src="./img/menos.png" alt="" class="sacar-persona" />
+            </div>
+           
+            
+            <div class="personas-agregadas-container">
+            <div class="personas-agregadas"></div>
+            </div>
+            
+            
 
             <div class="container-agregar">
-              <img src="./img/mas.png" alt="" class="agregar-persona" />
-              <p class="agregar">Agregar persona</p>
+              <img class="agregar-img agregar-persona" src="img/mas.png" alt="">
+              <img class="agregar-img sacar-persona" src="img/menos.png" alt="">
             </div>
 
             <div class="precio-btn">
@@ -148,7 +104,12 @@
                 class="btn-inscripcion input-form scale-animation"
               />
             </div>
+
+            
+    
           </form>
+         
+          <div id="mensaje"></div>
         </div>
       </div>
 
