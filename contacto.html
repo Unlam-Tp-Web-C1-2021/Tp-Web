@@ -7,7 +7,9 @@
     <title>Contacto</title>
     <link rel="stylesheet" href="css/estilo-general.css">
     <link rel="stylesheet" href="css/estilo-contacto.css">
-
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery_validate.js"></script>
+    <script src="js/validacion-contacto.js"></script>
 </head>
 
 <body>
@@ -41,7 +43,7 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li> <a href="contacto.html">Contacto</a></li>
-                <li> <a href="gift-card.html">Gif Card</a></li>
+                <li> <a href="gift-card.html">Gift Card</a></li>
                 <li> <a href="calendario.html">Calendario</a></li>
             </ul>
         </nav>
@@ -50,25 +52,29 @@
             <h1>CONTACTO</h1>
 
             <article class="acticle-contacto">
-                <form class="form-contacto" action="#" method="GET">
+                <form id="contacto" name="contacto" class="form-contacto" action="#" method="GET">
                     <!-- clase creada para darle el mismo estilo en el css y que no le sobre escriba el style del input del submit -->
                     <div class="container-form-contacto">
                         <label for="nya">Nombre y Apellido</label>
-                        <input class="bordes-redondeados-solid" type="text" id="nya" name="nombre" placeholder="Ingrese su nombre y apellido" required>
+                        <input class="bordes-redondeados-solid" type="text" id="nya" name="nombre" placeholder="Ingrese su nombre y apellido" >
     
                         <label for="email">Email</label>
-                        <input class="bordes-redondeados-solid" type="email" id="email" name="correo" placeholder="Ingre su email" required>
+                        <input class="bordes-redondeados-solid" type="text" id="email" name="correo" placeholder="Ingre su email">
     
+                        <label for="telefono">Teléfono</label>
+                        <input class="bordes-redondeados-solid" type="text" id="telefono" name="telefono" placeholder="Ingrese su número de teléfono">
+
                         <label for="curso">Curso</label>
-                        <select class="bordes-redondeados-solid" name="curso" id="curso" required>
+                        <select class="bordes-redondeados-solid" name="curso" id="curso">
                             <option value="1">Programación</option>
                             <option value="2">Diseño</option>
                         </select> 
 
                         <label for="consulta">Consulta</label>
-                        <textarea class="bordes-redondeados-solid" name="consulta" id="consulta" cols="30" rows="10" maxlength="10" required></textarea>                       
+                        <textarea class="bordes-redondeados-solid" name="consulta" id="consulta" cols="30" rows="10" maxlength="1000"></textarea>  
+                        <p id="caracteres">Caractéres restantes: 1000</p>                          
                     </div>
-
+                    <div id="mensaje" class="error"></div>
                     <input class="button-submit-contacto button" type="submit" value="Enviar">
                 </form>
             </article>
