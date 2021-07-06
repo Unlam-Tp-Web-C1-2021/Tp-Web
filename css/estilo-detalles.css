@@ -150,3 +150,75 @@
     object-fit: cover;
     align-self: flex-start;
 }
+.container_menu {
+    box-sizing: border-box;
+    width: 400px;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .menu {
+    
+    width: 400px;
+    background-color: rgb(255, 255, 255);
+  }
+  ul {
+    width: 100%;
+    padding: 0;
+    margin-top: 0;
+  }
+  li {
+    width: 100%;
+    list-style: none;
+    height: 40px;
+    overflow: hidden;
+    border-bottom: 1px solid black;
+    transition: 0.7s;
+  }
+  a{
+    display: block;
+    background-color:white;
+    padding: 15px;
+    text-decoration: none;
+    font-family: sans-serif;
+    color:black;
+    display: flex;
+    justify-content: space-between;
+  }
+  i {
+    margin-right: 10px;
+  }
+  .fa-chevron-down {
+    transition: 0.3s;
+  }
+  p {
+    padding: 20px;
+    color:black;
+    display: flex;
+    flex-direction: column;
+   
+  }
+  .scale {
+      height: 340px;
+  }
+  .rotate {
+    transform: rotate(360deg);
+  }
+  .contenido {
+    display: flex;
+    padding: 1em;
+    align-items: flex-start;
+    border: #ADADAD solid 1px;
+    
+  }
+  .boton {
+
+  }
+ .list {
+     display: flex;
+     flex-direction: column;
+     
+ }
+ .contenido-texto {
+    margin-left: 1em;
+ }
