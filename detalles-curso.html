@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalles del curso</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilo-general.css">
     <link rel="stylesheet" href="css/estilo-detalles.css">
     <!-- Material Icons Outlines-->
@@ -14,7 +15,9 @@
     <!-- Stars -->
     <!-- https://www.w3schools.com/howto/howto_css_star_rating.asp -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/bootstrap.min.js"></script>
 </head>
+
 <body>
     <header>
         <div class="container-header">
@@ -42,32 +45,48 @@
     <main>
         <nav class="nav-main">
             <ul>
-                <li> <a href="index.html">Home</a></li>
-                <li> <a href="contacto.html">Contacto</a></li>
-                <li> <a href="gift-card.html">Gif Card</a></li>
-                <li> <a href="calendario.html">Calendario</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="gift-card.html">Gif Card</a></li>
+                <li><a href="calendario.html">Calendario</a></li>
             </ul>
         </nav>
         <section class="section-detalle-info">
             <article class="article-detalle-info">
                 <img src="img/computacion-cuantica.jpg" alt="logo" id="img-curso">
-                
+
                 <div class="container-detalle-info">
                     <h1>PROGRAMACIÓN CUÁNTICA</h1>
                     <p class="text-detalle-curso">Valor: <span class="span-normal-texto">$6.000</span></p>
-                    <p class="text-detalle-curso">Tiempo de dedicacion necesario: <span class="span-normal-texto">4 semanas , con una duracion estimada de 30 horas</span></p>
+                    <p class="text-detalle-curso">Tiempo de dedicacion necesario: <span class="span-normal-texto">4
+                            semanas , con una duracion estimada de 30 horas</span></p>
                     <p class="text-detalle-curso">Descripcion del curso:</p>
-                    <p class="descripcion-curso">La computación cuántica plantea dos grandes objetivos: Desde la física, el objetivo es utilizar las herramientas de las ciencias de la computación, para entender la física cuántica. Desde las ciencias de la computación, el objetivo es utilizar las propiedades de la física cuántica para llevar a cabo el cómputo de ciertos problemas para los cuales dichas propiedades implican una aceleración exponencial frente a los mejores algoritmos clásicos conocidos. Recientemente, empresas como IBM, Google o Microsoft, produjeron hitos históricos por los que ha habido mucha información sobre los avances de la computación cuántica: IBM lanzó en 2016 su servicio IBM Quantum Experience, el cual ha crecido año a año, por el cual permite acceder a su computadora cuántica IBM-Q. La división de Inteligencia Artificial de Google creó el procesador cuántico Sycamore, con el cual en 2019 demostró la "supremacía cuántica". Microsoft, lanzó este año su servicio cloud Azure Quantum. En este curso, vamos a dar una introducción a la computación cuántica, sus algoritmos más conocidos, y los avances actuales en el desarrollo de lenguajes de programación para dicho formalismo.</p>
-               
+                    <p class="descripcion-curso">La computación cuántica plantea dos grandes objetivos: Desde la física,
+                        el objetivo es utilizar las herramientas de las ciencias de la computación, para entender la
+                        física cuántica. Desde las ciencias de la computación, el objetivo es utilizar las propiedades
+                        de la física cuántica para llevar a cabo el cómputo de ciertos problemas para los cuales dichas
+                        propiedades implican una aceleración exponencial frente a los mejores algoritmos clásicos
+                        conocidos. Recientemente, empresas como IBM, Google o Microsoft, produjeron hitos históricos por
+                        los que ha habido mucha información sobre los avances de la computación cuántica: IBM lanzó en
+                        2016 su servicio IBM Quantum Experience, el cual ha crecido año a año, por el cual permite
+                        acceder a su computadora cuántica IBM-Q. La división de Inteligencia Artificial de Google creó
+                        el procesador cuántico Sycamore, con el cual en 2019 demostró la "supremacía cuántica".
+                        Microsoft, lanzó este año su servicio cloud Azure Quantum. En este curso, vamos a dar una
+                        introducción a la computación cuántica, sus algoritmos más conocidos, y los avances actuales en
+                        el desarrollo de lenguajes de programación para dicho formalismo.</p>
+
                     <p class="text-detalle-curso">Requisitos Previos</p>
-                    <p>Se require haber cursado álgebra de primer año de alguna carrera de ciencias exactas o ingeniería. En particular, saber lo que son los espacios vectoriales y las matrices, así como operaciones entre matrices. Además, se requiere tener conocimientos básicos de programación. Por todo lo demás, el curso tratará de ser tan autocontenido como sea posible.</p>
+                    <p>Se require haber cursado álgebra de primer año de alguna carrera de ciencias exactas o
+                        ingeniería. En particular, saber lo que son los espacios vectoriales y las matrices, así como
+                        operaciones entre matrices. Además, se requiere tener conocimientos básicos de programación. Por
+                        todo lo demás, el curso tratará de ser tan autocontenido como sea posible.</p>
 
                     <a class="button" href="inscripcion.html">Inscribirse</a>
 
                     <div class="container-contenido-clase">
                         <h2>Contenidos por clase</h2>
 
-                        <div class="item-expand-contenido-clase">
+                        <!-- <div class="item-expand-contenido-clase">
                             <p>Introducción</p>
                             <span class="material-icons-outlined">expand_more</span>
                         </div>
@@ -105,6 +124,158 @@
                         <div class="item-expand-contenido-clase">
                             <p>Unidad 3</p>
                             <span class="material-icons-outlined">expand_more</span>
+                        </div> -->
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Introducción
+                                    </button>
+                                </h3>
+                                <div id="collapseOne" class="accordion-collapse collapse"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <ol class="container-item-list-contenido-clase">
+                                            <li class="item-list-container-clase">
+                                                <input type="checkbox" class="checkbox-item-list">
+                                                <div class="item-list-container-clase-text">
+                                                    <p class="title-item-contenido">1. Introducción</p>
+                                                    <p class="time-item-contenido">10 min</p>
+                                                </div>
+                                            </li>
+                                            <li class="item-list-container-clase">
+                                                <input type="checkbox" class="checkbox-item-list">
+                                                <div class="item-list-container-clase-text">
+                                                    <p class="title-item-contenido">2. ¿Cómo funcionará el curso?</p>
+                                                    <p class="time-item-contenido">10 min</p>
+                                                </div>
+                                            </li>
+                                            <li class="item-list-container-clase">
+                                                <input type="checkbox" class="checkbox-item-list">
+                                                <div class="item-list-container-clase-text">
+                                                    <p class="title-item-contenido">3. Instalaciones iniciales - Editor
+                                                        de código y descargas</p>
+                                                    <p class="time-item-contenido">10 min</p>
+                                                </div>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Unidad 1
+                                    </button>
+                                </h3>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <ol class="container-item-list-contenido-clase">
+                                            <li class="item-list-container-clase">
+                                                <input type="checkbox" class="checkbox-item-list">
+                                                <div class="item-list-container-clase-text">
+                                                    <p class="title-item-contenido">1. Introducción</p>
+                                                    <p class="time-item-contenido">10 min</p>
+                                                </div>
+                                            </li>
+                                            <li class="item-list-container-clase">
+                                                <input type="checkbox" class="checkbox-item-list">
+                                                <div class="item-list-container-clase-text">
+                                                    <p class="title-item-contenido">2. ¿Cómo funcionará el curso?</p>
+                                                    <p class="time-item-contenido">10 min</p>
+                                                </div>
+                                            </li>
+                                            <li class="item-list-container-clase">
+                                                <input type="checkbox" class="checkbox-item-list">
+                                                <div class="item-list-container-clase-text">
+                                                    <p class="title-item-contenido">3. Instalaciones iniciales - Editor
+                                                        de código y descargas</p>
+                                                    <p class="time-item-contenido">10 min</p>
+                                                </div>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Unidad 2
+                                    </button>
+                                </h3>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <ol class="container-item-list-contenido-clase">
+                                            <li class="item-list-container-clase">
+                                                <input type="checkbox" class="checkbox-item-list">
+                                                <div class="item-list-container-clase-text">
+                                                    <p class="title-item-contenido">1. Introducción</p>
+                                                    <p class="time-item-contenido">10 min</p>
+                                                </div>
+                                            </li>
+                                            <li class="item-list-container-clase">
+                                                <input type="checkbox" class="checkbox-item-list">
+                                                <div class="item-list-container-clase-text">
+                                                    <p class="title-item-contenido">2. ¿Cómo funcionará el curso?</p>
+                                                    <p class="time-item-contenido">10 min</p>
+                                                </div>
+                                            </li>
+                                            <li class="item-list-container-clase">
+                                                <input type="checkbox" class="checkbox-item-list">
+                                                <div class="item-list-container-clase-text">
+                                                    <p class="title-item-contenido">3. Instalaciones iniciales - Editor
+                                                        de código y descargas</p>
+                                                    <p class="time-item-contenido">10 min</p>
+                                                </div>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseFour">
+                                        Unidad 3
+                                    </button>
+                                </h3>
+                                <div id="collapseFour" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <ol class="container-item-list-contenido-clase">
+                                            <li class="item-list-container-clase">
+                                                <input type="checkbox" class="checkbox-item-list">
+                                                <div class="item-list-container-clase-text">
+                                                    <p class="title-item-contenido">1. Introducción</p>
+                                                    <p class="time-item-contenido">10 min</p>
+                                                </div>
+                                            </li>
+                                            <li class="item-list-container-clase">
+                                                <input type="checkbox" class="checkbox-item-list">
+                                                <div class="item-list-container-clase-text">
+                                                    <p class="title-item-contenido">2. ¿Cómo funcionará el curso?</p>
+                                                    <p class="time-item-contenido">10 min</p>
+                                                </div>
+                                            </li>
+                                            <li class="item-list-container-clase">
+                                                <input type="checkbox" class="checkbox-item-list">
+                                                <div class="item-list-container-clase-text">
+                                                    <p class="title-item-contenido">3. Instalaciones iniciales - Editor
+                                                        de código y descargas</p>
+                                                    <p class="time-item-contenido">10 min</p>
+                                                </div>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -112,18 +283,30 @@
             <article class="article-docente">
                 <div class="container-docente">
                     <img id="img-docente" src="img/images.jpg" alt="docente-image">
-                <div class="container-docente-info">
-                    <h2>Anthony Edward Stark</h2>
-                    <div class="container-stars">
-                        <span class="fa fa-star star-docente star-docente-checked"></span>
-                        <span class="fa fa-star star-docente star-docente-checked"></span>
-                        <span class="fa fa-star star-docente star-docente-checked"></span>
-                        <span class="fa fa-star star-docente star-docente-unchecked"></span>
-                        <span class="fa fa-star star-docente star-docente-unchecked"></span>
+                    <div class="container-docente-info">
+                        <h2>Anthony Edward Stark</h2>
+                        <div class="container-stars">
+                            <span class="fa fa-star star-docente star-docente-checked"></span>
+                            <span class="fa fa-star star-docente star-docente-checked"></span>
+                            <span class="fa fa-star star-docente star-docente-checked"></span>
+                            <span class="fa fa-star star-docente star-docente-unchecked"></span>
+                            <span class="fa fa-star star-docente star-docente-unchecked"></span>
+                        </div>
+                        <p>Anthony Stark heredo la compañía de su padre a los 21 años y desde entonces, Industrias Stark
+                            ha estado en el auge de su avance y desarrollo tecnológico. Dedica la mayor parte de su
+                            tiempo a su empresa, ocupándose de los proyectos mas importantes de forma personal y
+                            delegando las tareas administrativas o comerciales a subordinados de confianza. Industrias
+                            Stark, ahora renombradas y expandidas como Stark Internacional, se encarga de fabricar y
+                            proveer a los Estados Unidos de América de armamento Militar de alta tecnología. Fuera del
+                            ámbito empresarial, siempre puede verse a Tony en tapas de revistas, en grandes eventos
+                            sociales y siempre del brazo de una nueva señorita afortunada. A sus 26 años, Stark es
+                            considerado uno de los Solteros mas codiciados del mundo.Tony acaba de volver de viajes de
+                            negocio al rededor del mundo, donde ha hecho alianzas internacionales para continuar
+                            vendiendo sus productos y mejorando la calidad de los servicios de Stark Internacional a lo
+                            largo del Globo. En sus intereses se encuentran descansar y disfrutar de todos los placeres
+                            que Estados Unidos pueda ofrecerle
+                        </p>
                     </div>
-                    <p>Anthony Stark heredo la compañía de su padre a los 21 años y desde entonces, Industrias Stark ha estado en el auge de su avance y desarrollo tecnológico. Dedica la mayor parte de su tiempo a su empresa, ocupándose de los proyectos mas importantes de forma personal y delegando las tareas administrativas o comerciales a subordinados de confianza. Industrias Stark, ahora renombradas y expandidas como Stark Internacional, se encarga de fabricar y proveer a los Estados Unidos de América de armamento Militar de alta tecnología. Fuera del ámbito empresarial, siempre puede verse a Tony en tapas de revistas, en grandes eventos sociales y siempre del brazo de una nueva señorita afortunada. A sus 26 años, Stark es considerado uno de los Solteros mas codiciados del mundo.Tony acaba de volver de viajes de negocio al rededor del mundo, donde ha hecho alianzas internacionales para continuar vendiendo sus productos y mejorando la calidad de los servicios de Stark Internacional a lo largo del Globo. En sus intereses se encuentran descansar y disfrutar de todos los placeres que Estados Unidos pueda ofrecerle
-                    </p>
-                </div>
                 </div>
             </article>
         </section>
@@ -133,7 +316,7 @@
                 <!-- TODO: evaluar convertir en un slider -->
                 <div class="container-cursos-destacados">
                     <!-- /////////////////////////////////// ITEMS ////////////////////////////////////////////// -->
-                    
+
                     <div class="curso-destacado-item scale-animation">
                         <div class="container-curso-image">
                             <img src="img/imagencursot.jpg" alt="">
@@ -226,10 +409,12 @@
 
                 <a href="https://www.unlam.edu.ar/" target="_blanck"> <img src="img/004-instagram.png"></a>
                 <a href="https://www.unlam.edu.ar/" target="_blanck"><img src="img/001-logo-de-facebook.png"></a>
-                <a href="https://www.unlam.edu.ar/" target="_blanck"><img src="img/003-boton-de-logo-del-twitter.png"></a>
+                <a href="https://www.unlam.edu.ar/" target="_blanck"><img
+                        src="img/003-boton-de-logo-del-twitter.png"></a>
                 <a href="https://www.unlam.edu.ar/" target="_blanck"><img src=" img/002-youtube.png"></a>
             </div>
         </div>
     </footer>
 </body>
+
 </html>

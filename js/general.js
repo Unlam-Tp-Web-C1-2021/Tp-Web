@@ -1,7 +1,4 @@
-const CLASS_AGREGAR_CARRITO = "button"
-const CLASS_REMOVER_CARRITO = "button-remove-shopping"
-const BUTTON_ITEM_ID = "button-item-id-"
-const ITEM_LIST_SHOPPING_ADDED_ID = "item-list-shopping-added-id-"
+// --------------------------------------------- Clases ---------------------------------------------
 
 class Curso {
     constructor(id, nombre, img, precio, duracion) {
@@ -20,7 +17,26 @@ class Banner {
     }
 }
 
-// Lista de cursos que se can a mostrar en index
+class Category {
+    constructor(id, title, image) {
+        this.id = id
+        this.title = title
+        this.image = image
+    }
+}
+
+// --------------------------------------------- Constantes ---------------------------------------------
+
+const CAROUSEL_INTERVAL = 3000 // seconds
+const CLASS_AGREGAR_CARRITO = "button"
+const CLASS_REMOVER_CARRITO = "button-remove-shopping"
+const BUTTON_ITEM_ID = "button-item-id-"
+const ITEM_LIST_SHOPPING_ADDED_ID = "item-list-shopping-added-id-"
+const mediaQuery45 = window.matchMedia('screen and (min-width: 45em)')
+const mediaQuery65 = window.matchMedia('screen and (min-width: 65em)')
+const mediaQuery85 = window.matchMedia('screen and (min-width: 85em)')
+
+// Lista de cursos que se van a mostrar en index
 const cursos = [
     new Curso(1, "Photoshop Básico", "img/imagencursot.jpg", 1400, 6),
     new Curso(2, "Adobe Premiere Básico", "img/imagencursot.jpg", 1000, 4),
@@ -38,7 +54,22 @@ const imagesBanner = [
     new Banner("img/curso_progracion.jpg", "")
 ]
 
+const categoriesList = [
+    new Category(1, "Reparación de PC", "img/curso_progracion.jpg"),
+    new Category(1, "Reparación de PC", "img/curso_progracion.jpg"),
+    new Category(1, "Reparación de PC", "img/curso_progracion.jpg"),
+    new Category(1, "Reparación de PC", "img/curso_progracion.jpg"),
+    new Category(1, "Reparación de PC", "img/curso_progracion.jpg"),
+    new Category(1, "Reparación de PC", "img/curso_progracion.jpg"),
+    new Category(1, "Reparación de PC", "img/curso_progracion.jpg"),
+    new Category(1, "Reparación de PC", "img/curso_progracion.jpg")
+]
+
+// --------------------------------------------- Variables ---------------------------------------------
+
 var addedToCartList = []
+
+// --------------------------------------------- Métodos ---------------------------------------------
 
 window.onload = function() {
     let badge = $(".shopping-counter-container")
@@ -51,6 +82,26 @@ window.onload = function() {
     setupCarousel()
 
     loadCursos()
+
+    new bootstrap.Carousel($("#carousel-category"), {
+        interval: CAROUSEL_INTERVAL,
+        wrap: true,
+        touch: true
+      })
+    
+    setupCategories(5)
+    
+    mediaQuery45.addEventListener("change", (e) => {
+        setupCategories(2)
+    })
+
+    mediaQuery65.addEventListener("change", (e) => {
+        setupCategories(3)
+    })
+
+    mediaQuery85.addEventListener("change", (e) => {
+        setupCategories(5)
+    })
 }
 
 function setupCarousel() {
@@ -60,14 +111,14 @@ function setupCarousel() {
         containerItems.innerHTML += 
         `
         <div class="carousel-item ${ pos == 0 ? "active" : "" } container-banner-main-item">
-            <img src="${ banner.image }" class="d-block w-100" alt="${ banner.description }">
+            <img src="${ banner.image }" alt="${ banner.description }">
         </div>
         `
     })
 
     let container = $("#container-banner")
     new bootstrap.Carousel(container, {
-        interval: 2000,
+        interval: CAROUSEL_INTERVAL,
         wrap: true,
         touch: true
       })
@@ -184,4 +235,45 @@ function $(name) {
 
 function removeAt(list, index) {
     list.splice(index, 1)
+}
+
+function calculateItemCategories(maxItems) {
+    let group = []
+    let aux = []
+
+    categoriesList.forEach((element) => {
+        if (aux.length > maxItems - 1) {
+            group.push(aux)
+            aux = []
+        }
+        
+        aux.push(element)
+    })
+
+    group.push(aux)
+    
+    return group
+}
+
+function setupCategories(maxItems) {
+    let container = $("#carousel-container")
+    let categories = calculateItemCategories(maxItems)
+    
+    let html = ""
+    categories.forEach((element, pos) => {
+        html += `<div class="carousel-item ${ pos == 0 ? "active" : "" }">`
+            html += `<div class="container-items-categorias">`
+            element.forEach(elem => {
+                html += `
+                <div class="item-categoria">
+                    <img class="item-categoria-img scale-animation" src="${ elem.image }" alt="${ elem.title }">
+                    <h3 class="item-categoria-title">${ elem.title }</h3>
+                </div>
+                `
+            })                                
+            html += `</div>`
+        html += `</div>`
+    })
+
+    container.innerHTML = html
 }

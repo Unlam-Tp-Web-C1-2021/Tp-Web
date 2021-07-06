@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilo-general.css">
     <link rel="stylesheet" href="css/estilo-index.css">
-    <script src="js/general.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/general.js"></script>
 </head>
 
 <body>
@@ -34,7 +34,9 @@
             </div>
             <div class="shopping-container">
                 <img src="img/shopping.svg" alt="carrito">
-                <div class="shopping-counter-container"><p class="shopping-counter"></p></div>
+                <div class="shopping-counter-container">
+                    <p class="shopping-counter"></p>
+                </div>
             </div>
         </div>
         <ul class="shopping-list-container">
@@ -51,32 +53,21 @@
         </nav>
         <section>
             <article id="article-banner-main">
-                <!--<div class="container-banner-main">
-                    <-!-- TODO: Slider -/->
-                </div>-->
                 <div id="container-banner" class="carousel slide">
                     <div id="container-banner-main" class="carousel-inner">
-                      <!-- 
-                      <div class="carousel-item active container-banner-main-item">
-                        <img src="img/sadio-computacion-cuantica.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item container-banner-main-item">
-                        <img src="img/curso_progracion.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item container-banner-main-item">
-                        <img src="img/curso_progracion.jpg" class="d-block w-100" alt="...">
-                      </div>
-                       -->
+                        <!-- LOs ítems se van a cargar desde el javascript -->
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#container-banner" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#container-banner"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#container-banner" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
+                    <button class="carousel-control-next" type="button" data-bs-target="#container-banner"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
                     </button>
-                  </div>
+                </div>
             </article>
             <!-- <article id="article-steps">
                 <div id="container-steps">
@@ -103,200 +94,154 @@
             <article class="article-cursos-destacados">
                 <h2>CURSOS DESTACADOS</h2>
                 <div class="container-cursos-destacados">
-                    <!-- /////////////////////////////////// ITEMS ////////////////////////////////////////////// -->
-                    
-                    <!-- <div class="curso-destacado-item scale-animation">
-                        <div class="container-curso-image">
-                            <img src="img/imagencursot.jpg" alt="">
-                            <p class="curso-precio">$ 1400</p>
-                        </div>
-                        <div class="curso-detail">
-                            <div class="curso-detail-title">
-                                <p>6hs</p>
-                                <p>Photoshop Básico</p>
-                            </div>
-                            <a href="detalles-curso.html" class="ver-datalle-link">Ver Detalle</a>
-                            <a href="" class="curso-destacado-item-button button">Comprar</a>
-                        </div>
-                    </div>
-
-                    <div class="curso-destacado-item scale-animation">
-                        <div class="container-curso-image">
-                            <img src="img/imagencursot.jpg" alt="">
-                            <p class="curso-precio">$ 1000</p>
-                        </div>
-                        <div class="curso-detail">
-                            <div class="curso-detail-title">
-                                <p>4hs</p>
-                                <p>Adobe Premiere Básico</p>
-                            </div>
-                            <a href="detalles-curso.html" class="ver-datalle-link">Ver Detalle</a>
-                            <p href="/" class="curso-destacado-item-button button" id="button-buy">Comprar</p>
-                        </div>
-                    </div>
-
-                    <div class="curso-destacado-item scale-animation">
-                        <div class="container-curso-image">
-                            <img src="img/imagencursot.jpg" alt="">
-                            <p class="curso-precio">$ 1800</p>
-                        </div>
-                        <div class="curso-detail">
-                            <div class="curso-detail-title">
-                                <p>8hs</p>
-                                <p>Photoshop Avanzado</p>
-                            </div>
-                            <a href="detalles-curso.html" class="ver-datalle-link">Ver Detalle</a>
-                            <a href="inscripcion.html" class="curso-destacado-item-button button">Comprar</a>
-                        </div>
-                    </div>
-
-                    <div class="curso-destacado-item scale-animation">
-                        <div class="container-curso-image">
-                            <img src="img/imagencursot.jpg" alt="">
-                            <p class="curso-precio">$ 2000</p>
-                        </div>
-                        <div class="curso-detail">
-                            <div class="curso-detail-title">
-                                <p>10hs</p>
-                                <p>Python desde cero</p>
-                            </div>
-                            <a href="detalles-curso.html" class="ver-datalle-link">Ver Detalle</a>
-                            <a href="inscripcion.html" class="curso-destacado-item-button button">Comprar</a>
-                        </div>
-                    </div>
-
-                    <div class="curso-destacado-item scale-animation">
-                        <div class="container-curso-image">
-                            <img src="img/imagencursot.jpg" alt="">
-                            <p class="curso-precio">$ 1500</p>
-                        </div>
-                        <div class="curso-detail">
-                            <div class="curso-detail-title">
-                                <p>12hs</p>
-                                <p>Marketing Digital</p>
-                            </div>
-                            <a href="detalles-curso.html" class="ver-datalle-link">Ver Detalle</a>
-                            <a href="inscripcion.html" class="curso-destacado-item-button button">Comprar</a>
-                        </div>
-                    </div>
-
-                    <div class="curso-destacado-item scale-animation">
-                        <div class="container-curso-image">
-                            <img src="img/imagencursot.jpg" alt="">
-                            <p class="curso-precio">$ 1000</p>
-                        </div>
-                        <div class="curso-detail">
-                            <div class="curso-detail-title">
-                                <p>15hs</p>
-                                <p>HTML5, CSS3 y Javascript</p>
-                            </div>
-                            <a href="detalles-curso.html" class="ver-datalle-link">Ver Detalle</a>
-                            <a href="detalles-curso.html" class="curso-destacado-item-button button">Comprar</a>
-                        </div>
-                    </div>
-
-                    <div class="curso-destacado-item scale-animation">
-                        <div class="container-curso-image">
-                            <img src="img/imagencursot.jpg" alt="">
-                            <p class="curso-precio">$ 1100</p>
-                        </div>
-                        <div class="curso-detail">
-                            <div class="curso-detail-title">
-                                <p>9hs</p>
-                                <p>Wordpress</p>
-                            </div>
-                            <a href="detalles-curso.html" class="ver-datalle-link">Ver Detalle</a>
-                            <a href="detalles-curso.html" class="curso-destacado-item-button button">Comprar</a>
-                        </div>
-                    </div>
-
-                    <div class="curso-destacado-item scale-animation">
-                        <div class="container-curso-image">
-                            <img src="img/imagencursot.jpg" alt="">
-                            <p class="curso-precio">$ 1500</p>
-                        </div>
-                        <div class="curso-detail">
-                            <div class="curso-detail-title">
-                                <p>12hs</p>
-                                <p>Marketing Digital</p>
-                            </div>
-                            <a href="detalles-curso.html" class="ver-datalle-link">Ver Detalle</a>
-                            <a href="inscripcion.html" class="curso-destacado-item-button button">Comprar</a>
-                        </div>
-                    </div>
-
-                    <div class="curso-destacado-item scale-animation">
-                        <div class="container-curso-image">
-                            <img src="img/imagencursot.jpg" alt="">
-                            <p class="curso-precio">$ 1000</p>
-                        </div>
-                        <div class="curso-detail">
-                            <div class="curso-detail-title">
-                                <p>15hs</p>
-                                <p>HTML5, CSS3 y Javascript</p>
-                            </div>
-                            <a href="detalles-curso.html" class="ver-datalle-link">Ver Detalle</a>
-                            <a href="detalles-curso.html" class="curso-destacado-item-button button">Comprar</a>
-                        </div>
-                    </div>
-
-                    <div class="curso-destacado-item scale-animation">
-                        <div class="container-curso-image">
-                            <img src="img/imagencursot.jpg" alt="">
-                            <p class="curso-precio">$ 1100</p>
-                        </div>
-                        <div class="curso-detail">
-                            <div class="curso-detail-title">
-                                <p>9hs</p>
-                                <p>Wordpress</p>
-                            </div>
-                            <a href="detalles-curso.html" class="ver-datalle-link">Ver Detalle</a>
-                            <a href="detalles-curso.html" class="curso-destacado-item-button button">Comprar</a>
-                        </div>
-                    </div> -->
-
-                    <!-- /////////////////////////////////// ITEMS ////////////////////////////////////////////// -->
+                    <!-- Los ítems cargan desde el javascript -->
                 </div>
             </article>
             <article class="article-categorias">
                 <div class="container-categorias">
                     <h2>CATEGORÍAS</h2>
-                    <!-- TODO: Slider -->
-                    <!-- <div class="container-items-categorias">
-                        <div class="item-categoria">
-                            <img class="item-categoria-img scale-animation" src="img/curso_progracion.jpg" alt="categoria">
-                            <h3 class="item-categoria-title">Programación</h3>
+                    
+                    <div id="carousel-category" class="carousel slide carousel-dark">
+                        <div id="carousel-container" class="carousel-inner">
+                            <!-- <div class="carousel-item active">
+                                <div class="container-items-categorias">
+                                    <div class="item-categoria">
+                                        <img class="item-categoria-img scale-animation" src="img/curso_progracion.jpg"
+                                            alt="categoria">
+                                        <h3 class="item-categoria-title">Programación</h3>
+                                    </div>
+                                    <div class="item-categoria">
+                                        <img class="item-categoria-img scale-animation" src="img/curso_progracion.jpg"
+                                            alt="categoria">
+                                        <h3 class="item-categoria-title">Programación Backend</h3>
+                                    </div>
+                                    <div class="item-categoria">
+                                        <img class="item-categoria-img scale-animation" src="img/curso_progracion.jpg"
+                                            alt="categoria">
+                                        <h3 class="item-categoria-title">Programación Backend</h3>
+                                    </div>
+                                    <div class="item-categoria">
+                                        <img class="item-categoria-img scale-animation" src="img/curso_progracion.jpg"
+                                            alt="categoria">
+                                        <h3 class="item-categoria-title">Programación Backend</h3>
+                                    </div>
+                                    <div class="item-categoria">
+                                        <img class="item-categoria-img scale-animation" src="img/curso_progracion.jpg"
+                                            alt="categoria">
+                                        <h3 class="item-categoria-title">Programación Backend</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="container-items-categorias">
+                                    <div class="item-categoria">
+                                        <img class="item-categoria-img scale-animation" src="img/curso_progracion.jpg"
+                                            alt="categoria">
+                                        <h3 class="item-categoria-title">Programación</h3>
+                                    </div>
+                                    <div class="item-categoria">
+                                        <img class="item-categoria-img scale-animation" src="img/curso_progracion.jpg"
+                                            alt="categoria">
+                                        <h3 class="item-categoria-title">Programación Backend</h3>
+                                    </div>
+                                    <div class="carousel-item active">
+                                        <div class="container-items-categorias">
+                                            <div class="item-categoria">
+                                                <img class="item-categoria-img scale-animation" src="img/curso_progracion.jpg"
+                                                    alt="categoria">
+                                                <h3 class="item-categoria-title">Programación</h3>
+                                            </div>
+                                            <div class="item-categoria">
+                                                <img class="item-categoria-img scale-animation" src="img/curso_progracion.jpg"
+                                                    alt="categoria">
+                                                <h3 class="item-categoria-title">Programación Backend</h3>
+                                            </div>
+                                            <div class="item-categoria">
+                                                <img class="item-categoria-img scale-animation" src="img/curso_progracion.jpg"
+                                                    alt="categoria">
+                                                <h3 class="item-categoria-title">Programación Backend</h3>
+                                            </div>
+                                            <div class="item-categoria">
+                                                <img class="item-categoria-img scale-animation" src="img/curso_progracion.jpg"
+                                                    alt="categoria">
+                                                <h3 class="item-categoria-title">Programación Backend</h3>
+                                            </div>
+                                            <div class="item-categoria">
+                                                <img class="item-categoria-img scale-animation" src="img/curso_progracion.jpg"
+                                                    alt="categoria">
+                                                <h3 class="item-categoria-title">Programación Backend</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="carousel-item">
+                                        <div class="container-items-categorias">
+                                            <div class="item-categoria">
+                                                <img class="item-categoria-img scale-animation" src="img/curso_progracion.jpg"
+                                                    alt="categoria">
+                                                <h3 class="item-categoria-title">Programación</h3>
+                                            </div>
+                                            <div class="item-categoria">
+                                            <div class="item-categoria">
+                                        <img class="item-categoria-img scale-animation" src="img/curso_progracion.jpg"
+                                            alt="categoria">
+                                        <h3 class="item-categoria-title">Programación Backend</h3>
+                                    </div>
+                                    <div class="item-categoria">
+                                        <img class="item-categoria-img scale-animation" src="img/curso_progracion.jpg"
+                                            alt="categoria">
+                                        <h3 class="item-categoria-title">Programación Backend</h3>
+                                    </div>
+                                    <div class="item-categoria">
+                                        <img class="item-categoria-img scale-animation" src="img/curso_progracion.jpg"
+                                            alt="categoria">
+                                        <h3 class="item-categoria-title">Programación Backend</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="container-items-categorias">
+                                    <div class="item-categoria">
+                                        <img class="item-categoria-img scale-animation" src="img/curso_progracion.jpg"
+                                            alt="categoria">
+                                        <h3 class="item-categoria-title">Programación</h3>
+                                    </div>
+                                    <div class="item-categoria">
+                                        <img class="item-categoria-img scale-animation" src="img/curso_progracion.jpg"
+                                            alt="categoria">
+                                        <h3 class="item-categoria-title">Programación Backend</h3>
+                                    </div>
+                                    <div class="item-categoria">
+                                        <img class="item-categoria-img scale-animation" src="img/curso_progracion.jpg"
+                                            alt="categoria">
+                                        <h3 class="item-categoria-title">Programación Backend</h3>
+                                    </div>
+                                    <div class="item-categoria">
+                                        <img class="item-categoria-img scale-animation" src="img/curso_progracion.jpg"
+                                            alt="categoria">
+                                        <h3 class="item-categoria-title">Programación Backend</h3>
+                                    </div>
+                                    <div class="item-categoria">
+                                        <img class="item-categoria-img scale-animation" src="img/curso_progracion.jpg"
+                                            alt="categoria">
+                                        <h3 class="item-categoria-title">Programación Backend</h3>
+                                    </div>
+                                </div>
+                            </div> -->
+                            
                         </div>
-                        <div class="item-categoria">
-                            <img class="item-categoria-img scale-animation" src="img/curso_progracion.jpg" alt="categoria">
-                            <h3 class="item-categoria-title">Diseño Web</h3>
-                        </div>
-                        <div class="item-categoria">
-                            <img class="item-categoria-img scale-animation" src="img/curso_progracion.jpg" alt="categoria">
-                            <h3 class="item-categoria-title">Diseño Gráfico</h3>
-                        </div>
-                        <div class="item-categoria">
-                            <img class="item-categoria-img scale-animation" src="img/curso_progracion.jpg" alt="categoria">
-                            <h3 class="item-categoria-title">Programación Backend</h3>
-                        </div>
-                        <div class="item-categoria">
-                            <img class="item-categoria-img scale-animation" src="img/curso_progracion.jpg" alt="categoria">
-                            <h3 class="item-categoria-title">Edición de video</h3>
-                        </div>
-                        <div class="item-categoria">
-                            <img class="item-categoria-img scale-animation" src="img/curso_progracion.jpg" alt="categoria">
-                            <h3 class="item-categoria-title">Robótica</h3>
-                        </div>
-                        <div class="item-categoria">
-                            <img class="item-categoria-img scale-animation" src="img/curso_progracion.jpg" alt="categoria">
-                            <h3 class="item-categoria-title">Seguridad Informática</h3>
-                        </div>
-                        <div class="item-categoria">
-                            <img class="item-categoria-img scale-animation" src="img/curso_progracion.jpg" alt="categoria">
-                            <h3 class="item-categoria-title">Reparación de PC</h3>
-                        </div>
-                    </div> -->
-                </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-category" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carousel-category" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                    </div>
             </article>
         </section>
     </main>
@@ -327,7 +272,8 @@
 
                 <a href="https://www.unlam.edu.ar/" target="_blanck"> <img src="img/004-instagram.png"></a>
                 <a href="https://www.unlam.edu.ar/" target="_blanck"><img src="img/001-logo-de-facebook.png"></a>
-                <a href="https://www.unlam.edu.ar/" target="_blanck"><img src="img/003-boton-de-logo-del-twitter.png"></a>
+                <a href="https://www.unlam.edu.ar/" target="_blanck"><img
+                        src="img/003-boton-de-logo-del-twitter.png"></a>
                 <a href="https://www.unlam.edu.ar/" target="_blanck"><img src=" img/002-youtube.png"></a>
             </div>
         </div>
