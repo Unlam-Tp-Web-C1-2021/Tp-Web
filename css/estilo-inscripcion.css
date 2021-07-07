@@ -24,7 +24,7 @@ h2 {
 
 
 .campo-form {
-    width: 25%;
+    width: 100%;
     padding: 10px;
     border-width: 1px;
     border-radius: 5px;
@@ -40,9 +40,17 @@ h2 {
     
 }
 
-.input-form {
-    margin-right: 40px;
-    margin-top: 20px;
+.persona {
+    display: block;
+    margin-top: 2em;
+}
+
+.persona input {
+    display: inline;
+}
+
+.persona > :nth-child(2) {
+    margin: 1em 0;
 }
 
 .btn-inscripcion{
@@ -78,11 +86,7 @@ h2 {
     
 }
 .agregar-persona {    
-    
-    
     max-width: 100%;
-    vertical-align:middle;
-    
 }
 
 .container-agregar {
@@ -136,3 +140,21 @@ h2 {
     border-color: green;
 }
 
+@media screen and (min-width: 45em) {
+    .persona {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .persona input {
+        display: block;
+    }
+
+    .persona > :nth-child(2) {
+        margin: 0;
+    }
+
+    .campo-form {
+        width: 30%;
+    }
+}
