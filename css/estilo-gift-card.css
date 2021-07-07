@@ -4,6 +4,19 @@ label {
     margin-top: 1em;
 }
 
+@media screen and (min-width: 45em) {
+    .section-gift-card{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+   
+      
+   
+} 
+
 .section-gift-card {
     width: 90%;
     margin: auto;
